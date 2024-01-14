@@ -3,7 +3,7 @@ import React from 'react'
 const Course = () => {
   return (
    <>
-  <div className='carosule-slider'>
+  {/* <div className='carosule-slider'>
   <div id="carouselExample" class="carousel slide">
   <div class="carousel-inner">
     <div class="carousel-item active">
@@ -46,7 +46,7 @@ const Course = () => {
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-  </div>
+  </div> */}
    
    </>
   )
