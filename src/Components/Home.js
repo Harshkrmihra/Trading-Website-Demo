@@ -3,6 +3,7 @@ import'./Home.css'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Card from 'react-bootstrap/Card';
 
 const Home = () => {
 
@@ -16,20 +17,13 @@ const Home = () => {
  
   return (
    <>
-    <div className='HomePage static'>
-     <div className='main-img  mx-auto'>
-    <img src='./Images/image1.png' alt='no-imag' className=' '/>
-     </div>
-     <div className='tital absolute  bottom-50 left-1/3 pt-5 '>
-      <h1 className=' text text-7xl' >TradingBells</h1>
-      <p className=' text text-3xl'>Online Share & Commodity Broker</p>
-     </div>
-
-     <div className='text-box absolute  bottom-72 left-96  w-1/2 ml-18 '>
-      <input type='text' placeholder='Enter A Number' className='inpt p-3 rounded-l-full w-2/3 '/>
-      <button className='btnt bg-green-500 p-3  rounded-r-full  w-40' >Get A Call</button>
-     </div>
-   </div>
+   <div className='home '>
+    <div className='top '>
+      <div className='h-img'>
+        <img src='./Images/image1.png' alt='ni-image1'/>
+      </div>
+    </div>
+    
            {/* --------------------------second-Part------------------- */}
 
 <div className='second-contain w-full bg-green-400 p-12 justify-center'>
@@ -56,7 +50,7 @@ const Home = () => {
           <h1 className='service text-center '>Our Services</h1>
         </div>
       <div class="grid grid-cols-4 gap-12 pl-28 pr-28 pt-10">
-        <div className='card border-solid border-2 border-gray-400 p-10'>
+        <div className='card  border-solid border-2 border-gray-400 p-10' style={{borderShadow:"inset 0 0 5px , inset 0 0 5px"}}>
           <img src='./Images/our-service-1.png' alt='no-img'/>
           <div className='t-1'>
             <h1>Discount Broking</h1>
@@ -101,18 +95,24 @@ const Home = () => {
       <div className='all-Cards  p-5 ml-32 mr-32'>
  <Slider {...settings} className='slide '>
   
-          <div className='cart '>
-            <img src='./Logos/Be a pro trader with this 7 key concepts.jpeg' alt='no-one' />
-            <div className='one pt-5 pb-5 pr-3 pl-3'>
-              <h3>
-            <a href="https://tradingbells.com/article/what-is-derivative-trading-understanding-types-advantages-disadvantages" data-original-title title className='h-link'> What is Derivative trading?  Understanding: Types, Advantages & Disadvantages</a>
-            </h3>
-            </div>
-            <div>
-              <p>"Learn about the 7 key concepts to master trading strategies and tactics. Dive into essential principles that go beyond the basics, providing valuable insights to enhance your trading strategies. "</p>
-            </div>
-          </div>
-
+     <Card style={{ width: '25rem',  height:'40rem'}}>
+      <Card.Img variant="top" src="./Logos/Be a pro trader with this 7 key concepts.jpeg" />
+      <Card.Body className='card1 bg-green-300'>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text className='truncate  overflow-hidden'>
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        
+        
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        
+       
+          Some quick example text to build on the card title and make up the
+          bulk of the card's content.
+        </Card.Text>
+      </Card.Body>
+    </Card>
           <div className='cart'>
             <img src='./Logos/11.jpg' alt='no-one'/>
             <div className='one'>
@@ -145,6 +145,7 @@ const Home = () => {
          
         </Slider>
         </div>
+      </div>
       </div>
    </>
   )
