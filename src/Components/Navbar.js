@@ -50,7 +50,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a className="links  text-black font-semibold hover:font-semibold hover:no-underline  md:text-black md:font-semibold   md:hover:no-underline md:hover:text-green-400 " href="/">
+                <a className="links  text-black font-semibold hover:no-underline  md:text-black md:font-semibold   md:hover:no-underline md:hover:text-green-400 " href="/">
                   Products
                 </a>
               </li>
@@ -76,7 +76,7 @@ const Navbar = () => {
               </li>
             </ul>
             <div className="sign-button  md:ml-9"> 
-            <button class=" border-2 md:mt-20 border-green-300 rounded-tr-full rounded-b-full  px-5 py-3 bg-green-400   hover:text-white  font-sans md:bg-white md:text-lg font-medium  md:border-2 md:border-green-500 md:hover:text-green-500 md:rounded-tr-full md:rounded-b-full  md:px-4 md:py-3   md:font-sans md:text-lg md:font-medium md:mb-20">Sign In</button>
+            <button class=" border-2 md:mt-20 border-[#25BE9B] rounded-tr-full rounded-b-full  px-5 py-3    hover:text-[#25BE9B]  font-sans md:bg-white md:text-lg font-medium  md:border-2 md:border-[#25BE9B] md:hover:text-[#25BE9B] md:rounded-tr-full md:rounded-b-full  md:px-4 md:py-3   md:font-sans md:text-lg md:font-medium md:mb-20">Sign In</button>
             </div>
           </div>
           

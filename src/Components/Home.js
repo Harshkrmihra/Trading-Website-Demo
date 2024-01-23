@@ -26,7 +26,7 @@ const Home = () => {
     
            {/* --------------------------second-Part------------------- */}
 
-<div className='second-contain w-full bg-green-400 p-12 justify-center'>
+<div className='second-contain w-full bg-[#25BE9B] p-12 justify-center'>
   <div className='part-1 pt-5'>
     <h1 className='part-1 font-bold text-white text-3xl text-center '>Why pay more for services that you don't avail?</h1>
   </div>
@@ -45,41 +45,46 @@ const Home = () => {
       
             {/* ------------------Our Service--------------------- */}
 
-      <div className=' full-container p-5 '>
+      <div className=' full-container p-5'>
         <div className='blog-h  place-items-center'>
           <h1 className='service text-center '>Our Services</h1>
         </div>
-      <div class="grid grid-cols-4 gap-12 pl-28 pr-28 pt-10">
-        <div className='card  border-solid border-2 border-gray-400 p-10' style={{borderShadow:"inset 0 0 5px , inset 0 0 5px"}}>
-          <img src='./Images/our-service-1.png' alt='no-img'/>
-          <div className='t-1'>
-            <h1>Discount Broking</h1>
-            <p>Discount Broking is our primary product and what we specialise in.</p>
-            <p>Zero Brokerage Investments</p>
+        {/* ........cards....... */}
+      <div class="grid grid-row-4 gap-12 pl-28 pr-28 pt-10  md:grid md:grid-cols-4 md:gap-4  ">
+        <div className='card-1  border-solid border-2  shadow-inner shadow-[#25BE9B]  border-[#25BE9B]  '>
+          <img src='./Images/our-service-1.png' alt='no-img' className='image h-[28vh] mx-auto my-3 md:h-[30vh] md:mx-10 md:my-10 '/>
+          <div className='t-1 text-sm mx-2 md:py-5 '>
+            <h1 className='hed text-lg text-center md:text-[3.6vh] md:mb-5'>Discount Broking</h1>
+            <p className='pr text-sm text-start m-1 md:text-lg'>Discount Broking is our primary product and what we specialise in.</p>
+            <p className='md:text-lg'>Zero Brokerage Investments</p>
           </div>
         </div>
-        <div className='card border-solid border-2 border-gray-400 p-10 shadow-inner '>
-          <img src='./Images/our-service-2.png' alt='no-img'/>
-          <div className='t-1'>
-            <h1>Discount Broking</h1>
-            <p>Discount Broking is our primary product and what we specialise in.</p>
-            <p>Zero Brokerage Investments</p>
+
+        <div className='card-2  border-solid border-2   shadow-inner shadow-[#25BE9B]  border-[#25BE9B]  '>
+          <img src='./Images/our-service-2.png' alt='no-img' className='image h-[28vh] mx-auto my-4 md:h-[30vh] md:mx-10 md:my-10'/>
+          
+          <div className='t-1 text-sm mx-2 md:py-5 '>
+            <h1 className='hed text-lg text-center md:text-[3.6vh] md:mb-5'>Discount Broking</h1>
+            <p className='pr text-sm text-start m-1 md:text-lg'>Discount Broking is our primary product and what we specialise in.</p>
+            <p className='md:text-lg'>Zero Brokerage Investments</p>
           </div>
         </div>
-        <div className='card border-solid border-2 border-gray-400 p-10'>
-          <img src='./Images/our-service-3.png' alt='no-img'/>
-          <div className='t-1'>
-            <h1>Discount Broking</h1>
-            <p>Discount Broking is our primary product and what we specialise in.</p>
-            <p>Zero Brokerage Investments</p>
+
+        <div className='card-3  border-solid  border-2  shadow-inner shadow-[#25BE9B]  border-[#25BE9B] '>
+          <img src='./Images/our-service-3.png' alt='no-img' className='image h-[28vh] mx-auto my-4 md:h-[30vh] md:mx-10 md:my-10'/>
+          <div className='t-1 text-sm mx-2 md:py-5 '>
+            <h1 className='hed text-lg text-center md:text-[3.6vh] md:mb-5'>Discount Broking</h1>
+            <p className='pr text-sm text-start m-1 md:text-lg'>Discount Broking is our primary product and what we specialise in.</p>
+            <p className='md:text-lg'>Zero Brokerage Investments</p>
           </div>
         </div>
-        <div className='card border-solid border-2 border-gray-400 p-10'>
-          <img src='./Images/our-service-4.png' alt='no-img'/>
-          <div className='t-1'>
-            <h1>Discount Broking</h1>
-            <p>Discount Broking is our primary product and what we specialise in.</p>
-            <p>Zero Brokerage Investments</p>
+
+          <div className='card-4  border-solid  border-2  shadow-inner shadow-[#25BE9B]  border-[#25BE9B] '>
+          <img src='./Images/our-service-4.png' alt='no-img' className='image h-[28vh] mx-auto my-4 md:h-[30vh] md:mx-10 md:my-10'/>
+          <div className='t-1 text-sm mx-2 md:py-5 '>
+            <h1 className='hed text-lg text-center md:text-[3.6vh] md:mb-5'>Discount Broking</h1>
+            <p className='pr text-sm text-start m-1 md:text-lg'>Discount Broking is our primary product and what we specialise in.</p>
+            <p className='md:text-lg'>Zero Brokerage Investments</p>
           </div>
         </div>
       </div>
@@ -92,56 +97,63 @@ const Home = () => {
     <div className='our-blog'>
       <h1 className='blog-h text-center '> Our Blog</h1>
     </div>
-      <div className='all-Cards  p-5 ml-32 mr-32'>
+      <div className='all-Cards md:p-20 md:my-20'>
  <Slider {...settings} className='slide '>
   
-     <Card style={{ width: '25rem',  height:'40rem'}}>
-      <Card.Img variant="top" src="./Logos/Be a pro trader with this 7 key concepts.jpeg" />
-      <Card.Body className='card1 bg-green-300'>
-        <Card.Title>Card Title</Card.Title>
-        <Card.Text className='truncate  overflow-hidden'>
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        
-        
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
-        
-       
-          Some quick example text to build on the card title and make up the
-          bulk of the card's content.
+     <Card className='s-card-1 border-1 shadow-xl my-5'  >
+      <Card.Img variant="top" src="./Logos/blog.png" alt='no-img' />
+      <Card.Body className='card1 bg-[#a1e7d6] '>
+        <Card.Title >
+         <h4 className='h-c text-gray-600 md:text-3lg'  >What is a Stock Split, how does it work, and its advantages
+        </h4>
+        </Card.Title>
+        <Card.Text className='t border-t-2 border-gray-700 '>
+          <p className='pr my-3'>Discover the ins and outs of stock splits, including how they work and their potential advantages. Learn how this corporate action can impact investors and stock price</p>
         </Card.Text>
       </Card.Body>
     </Card>
-          <div className='cart'>
-            <img src='./Logos/11.jpg' alt='no-one'/>
-            <div className='one'>
-              <a href='/'>7 Key Concepts That Will Elevate Your Skills and Make You a Better Trader</a>
-            </div>
-            <div>
-              <p>"Learn about the 7 key concepts to master trading strategies and tactics. Dive into essential principles that go beyond the basics, providing valuable insights to enhance your trading strategies. "</p>
-            </div>
-          </div>
 
-          <div className='cart '>
-            <img src='./Logos/Our-Blog-3.jpg' alt='no-one'/>
-            <div className='one'>
-              <a href='/'>7 Key Concepts That Will Elevate Your Skills and Make You a Better Trader</a>
-            </div>
-            <div>
-              <p>"Learn about the 7 key concepts to master trading strategies and tactics. Dive into essential principles that go beyond the basics, providing valuable insights to enhance your trading strategies. "</p>
-            </div>
-          </div>
+         
+     <Card className='s-card-2 border-1 shadow-xl my-5'  >
+      <Card.Img variant="top" src="./Logos/blog-2.png" alt='no-img' />
+      <Card.Body className='card1 bg-[#a1e7d6] '>
+        <Card.Title >
+         <h4 className='h-c text-gray-600 md:text-3lg'  >What is a Stock Split, how does it work, and its advantages
+        </h4>
+        </Card.Title>
+        <Card.Text className='t border-t-2 border-gray-700 '>
+          <p className='pr my-3'>Discover the ins and outs of stock splits, including how they work and their potential advantages. Learn how this corporate action can impact investors and stock price</p>
+        </Card.Text>
+      </Card.Body>
+    </Card>
+
+         
+     <Card className='s-card-2 border-1 shadow-xl my-5'  >
+      <Card.Img variant="top" src="./Logos/Be a pro trader with this 7 key concepts.jpeg" />
+      <Card.Body className='card1 bg-[#a1e7d6] '>
+        <Card.Title >
+         <h4 className='h-c text-gray-600 md:text-3lg'  >What is a Stock Split, how does it work, and its advantages
+        </h4>
+        </Card.Title>
+        <Card.Text className='t border-t-2 border-gray-700 '>
+          <p className='pr my-3'>Discover the ins and outs of stock splits, including how they work and their potential advantages. Learn how this corporate action can impact investors and stock price</p>
+        </Card.Text>
+      </Card.Body>
+    </Card>
         
-          <div className='cart'>
-            <img src='./Logos/Our-Blog-4.png' alt='no-one'/>
-            <div className='one'>
-              <a href='/'>7 Key Concepts That Will Elevate Your Skills and Make You a Better Trader</a>
-            </div>
-            <div>
-              <p>"Learn about the 7 key concepts to master trading strategies and tactics. Dive into essential principles that go beyond the basics, providing valuable insights to enhance your trading strategies. "</p>
-            </div>
-          </div>
+          
+     <Card className='s-card-4 border-1 shadow-xl my-5'  >
+      <Card.Img variant="top" src="./Logos/Be a pro trader with this 7 key concepts.jpeg" />
+      <Card.Body className='card1 bg-[#a1e7d6] '>
+        <Card.Title >
+         <h4 className='h-c text-gray-600 md:text-3lg'  >What is a Stock Split, how does it work, and its advantages
+        </h4>
+        </Card.Title>
+        <Card.Text className='t border-t-2 border-gray-700 '>
+          <p className='pr my-3'>Discover the ins and outs of stock splits, including how they work and their potential advantages. Learn how this corporate action can impact investors and stock price</p>
+        </Card.Text>
+      </Card.Body>
+    </Card>
          
         </Slider>
         </div>
