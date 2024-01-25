@@ -79,7 +79,7 @@ const Investor = () => {
    <div className="container text-center ">
         <h2> Responsive </h2>
 
-        <div className="container max-w-[80%] my-5">
+        <div className="container max-w-[80%] bg-gray-200 my-5">
           <Slider {...settings}>
             {/* ......card-1....... */}
             <div className="card  bg-white max-w-[100vh] px-3 py-4">

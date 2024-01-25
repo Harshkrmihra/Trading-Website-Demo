@@ -1,5 +1,4 @@
 
-
 .slick-slide > div{
     margin: 0 05%
     
@@ -16,12 +15,6 @@ button.slick-next:before{
       font-size: 3rem;
       margin: 0;
       color: #25BE9B ;
-}
-.f-22{
-    font-size: 22px;
-}
-.f-26{
-    font-size: 36px;
 }
 
 /* img.cart{

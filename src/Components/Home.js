@@ -181,7 +181,7 @@ const Home = () => {
       </div>
 
       <div className='my-10'>
-       <Investor/>
+        <Investor/>
       </div>
       </div>
    </>
