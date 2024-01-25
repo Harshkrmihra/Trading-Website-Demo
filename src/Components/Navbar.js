@@ -19,7 +19,7 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="head bg-white md:h-24 md:border-t-2 md:border-gray-300">
+      <header className="head bg-white md:h-24 md:border-t-2 md:border-gray-300 ">
         <nav className="navi flex justify-between items-center  ">
           <div className="toggle-menu ml-5">
             {menuOpen ? (
@@ -65,7 +65,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a className="links  text-black font-semibold hover:font-semibold hover:no-underline   md:text-black md:font-semibold  md:hover:no-underline md:hover:text-green-400 " href="/">
+                <a className="links  text-black font-semibold hover:font-semibold hover:no-underline   md:text-black md:font-semibold  md:hover:no-underline md:hover:text-green-400 " href="/fund">
                   Funds
                 </a>
               </li>
