@@ -17,7 +17,6 @@ import Header from './Components/Header';
 
 
 
-
 function App() {
 
   return (
@@ -26,13 +25,12 @@ function App() {
   <Navbar/>
   <Routes>
   <Route path='/'element={<Home/>}></Route>
-  <Route path='/fund' element={<Funds/>}></Route>
+  {/* <Route path='/fund' element={<Funds/>}></Route> */}
   {/* <Route path='/product' element={<Product/>}></Route>
   <Route path='/about' element={<About/>}></Route>
   <Route path='/price' element={<Pricing/>}></Route>
 
   <Route path='/course' element={<Course/>}></Route> */}
- 
   </Routes>
   <Footer/>
  
