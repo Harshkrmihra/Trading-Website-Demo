@@ -45,50 +45,41 @@ const Home = () => {
       
             {/* ------------------Our Service--------------------- */}
 
-      <div className=' full-container p-5'>
-        <div className='blog-h  place-items-center'>
-          <h1 className='service text-center '>Our Services</h1>
+            <div class="max-w-[100] mx-auto">
+        <div class="text-center uppercase py-8">
+            <h2 class="f-26">Our Services</h2>
         </div>
-        {/* ........cards....... */}
-      <div class="grid grid-row-4 gap-12 pl-28 pr-28 pt-10  md:grid md:grid-cols-4 md:gap-4  ">
-        <div className='card-1  border-solid border-2  shadow-inner shadow-[#25BE9B]  border-[#25BE9B]  '>
-          <img src='./Images/our-service-1.png' alt='no-img' className='image h-[28vh] mx-auto my-3 md:h-[30vh] md:mx-10 md:my-10 '/>
-          <div className='t-1 text-sm mx-2 md:py-5 '>
-            <h1 className='hed text-lg text-center md:text-[3.6vh] md:mb-5'>Discount Broking</h1>
-            <p className='pr text-sm text-start m-1 md:text-lg'>Discount Broking is our primary product and what we specialise in.</p>
-            <p className='md:text-lg'>Zero Brokerage Investments</p>
-          </div>
-        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-8">
+            
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <img src="https://i.ibb.co/N97PXXy/img1.png" alt="" className="s-img max-w-[50%] mx-auto"/>
+                <h2 className="f-22 font-semibold mb-4 mt-8">Discount Broking</h2>
+                <p className="text-gray-600 pb-4">Discount Broking is our primary product and what we specialise in.</p>
+                <p className="text-gray-600 pb-4">Zero Brokerage Investments</p>
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <img src="https://i.ibb.co/Js2jMzn/img2.png" alt="" className="s-img max-w-[50%] mx-auto"/>
+                <h2 className="f-22 font-semibold mb-4 mt-8">Discount Broking</h2>
+                <p className="text-gray-600 pb-4">Discount Broking is our primary product and what we specialise in.</p>
+                <p className="text-gray-600 pb-4">Zero Brokerage Investments</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <img src="https://i.ibb.co/j3RRxPg/img3.png" alt="" className="s-img max-w-[50%] mx-auto"/>
+                <h2 className="f-22 font-semibold mb-4 mt-8">Discount Broking</h2>
+                <p className="text-gray-600 pb-4">Discount Broking is our primary product and what we specialise in.</p>
+                <p className="text-gray-600 pb-4">Zero Brokerage Investments</p>
+            </div>
 
-        <div className='card-2  border-solid border-2   shadow-inner shadow-[#25BE9B]  border-[#25BE9B]  '>
-          <img src='./Images/our-service-2.png' alt='no-img' className='image h-[28vh] mx-auto my-4 md:h-[30vh] md:mx-10 md:my-10'/>
-          
-          <div className='t-1 text-sm mx-2 md:py-5 '>
-            <h1 className='hed text-lg text-center md:text-[3.6vh] md:mb-5'>Discount Broking</h1>
-            <p className='pr text-sm text-start m-1 md:text-lg'>Discount Broking is our primary product and what we specialise in.</p>
-            <p className='md:text-lg'>Zero Brokerage Investments</p>
-          </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-md text-center">
+                <img src="https://i.ibb.co/89qhz7V/img4.png" alt="" className="s-img max-w-[50%] mx-auto"/>
+                <h2 className="f-22 font-semibold mb-4 mt-8">Discount Broking</h2>
+                <p className="text-gray-600 pb-4">Discount Broking is our primary product and what we specialise in.</p>
+                <p className="text-gray-600 pb-4">Zero Brokerage Investments</p>
+            </div>
         </div>
-
-        <div className='card-3  border-solid  border-2  shadow-inner shadow-[#25BE9B]  border-[#25BE9B] '>
-          <img src='./Images/our-service-3.png' alt='no-img' className='image h-[28vh] mx-auto my-4 md:h-[30vh] md:mx-10 md:my-10'/>
-          <div className='t-1 text-sm mx-2 md:py-5 '>
-            <h1 className='hed text-lg text-center md:text-[3.6vh] md:mb-5'>Discount Broking</h1>
-            <p className='pr text-sm text-start m-1 md:text-lg'>Discount Broking is our primary product and what we specialise in.</p>
-            <p className='md:text-lg'>Zero Brokerage Investments</p>
-          </div>
-        </div>
-
-          <div className='card-4  border-solid  border-2  shadow-inner shadow-[#25BE9B]  border-[#25BE9B] '>
-          <img src='./Images/our-service-4.png' alt='no-img' className='image h-[28vh] mx-auto my-4 md:h-[30vh] md:mx-10 md:my-10'/>
-          <div className='t-1 text-sm mx-2 md:py-5 '>
-            <h1 className='hed text-lg text-center md:text-[3.6vh] md:mb-5'>Discount Broking</h1>
-            <p className='pr text-sm text-start m-1 md:text-lg'>Discount Broking is our primary product and what we specialise in.</p>
-            <p className='md:text-lg'>Zero Brokerage Investments</p>
-          </div>
-        </div>
-      </div>
-      </div>
+    </div>
 
 
             {/* ------------------Our Blog--------------------- */}
