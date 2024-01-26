@@ -5,14 +5,14 @@
 }
 
 button.slick-prev:before{
-    content: "<";
-      font-size: 3rem;
+  
+      font-size: 1rem;
       margin: 0;
       color: #25BE9B;
 }
 button.slick-next:before{
-    content: ">";
-      font-size: 3rem;
+  
+      font-size: 1rem;
       margin: 0;
       color: #25BE9B ;
 }

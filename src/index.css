@@ -10,3 +10,27 @@
  
   }
 }
+.off-list >li{
+  margin: 3vh;
+}
+.logo-text{
+  background: linear-gradient(135deg, #344e41, #588157, #a3b18a, #a7c957);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animat 8s ease-in-out infinite;
+ 
+
+}
+
+@keyframes animat {
+  0% { 
+    background-position: 0% 50%;
+  }
+  50% { 
+    background-position: 100% 50%;
+  }
+  100% { 
+    background-position: 50% 0%;
+  }
+}
+
