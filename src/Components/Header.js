@@ -4,9 +4,9 @@ import { NavLink } from 'react-bootstrap'
 const Header = () => {
   return (
    <>
-     <div className="topNavbar hidden md:h-14 md:place-items-center md:flex md:justify-end md:bg-slate-50 Md:max-h-24 md:space-x-4 md:p-2 ">
-        <div className="top flex ">
-          <NavLink to="/" ClassName="top-link ">
+     <div className="topNavbar hidden md:h-14 md:place-items-center md:flex md:justify-end  bg-black opacity-95 Md:max-h-24 md:space-x-4 md:p-2 ">
+        <div className="top flex text-white   ">
+          <NavLink to="/" ClassName="top-link">
             Blog
           </NavLink>
           <div className="vr h-7  mt-2" />

@@ -7,7 +7,7 @@
 @layer base {
   html {
     font-family: "Proxima Nova", system-ui, sans-serif;
- 
+     background: black;
   }
 }
 .off-list >li{
@@ -15,12 +15,12 @@
 }
 .logo-text{
   background: linear-gradient(135deg, #344e41, #588157, #a3b18a, #a7c957);
+  filter: drop-shadow(0vh 0 1vh  rgb(12, 144, 80) );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: animat 8s ease-in-out infinite;
- 
-
 }
+.logo-text::first-letter{}
 
 @keyframes animat {
   0% { 

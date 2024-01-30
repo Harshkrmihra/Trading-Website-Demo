@@ -45,15 +45,15 @@ const Home = () => {
     <>
       <div className='home bg-gray-100'>
         <div className='top '>
-          <div className='h-img'>
-            <img src='./Logos/investing.jpg' alt='ni-image1' />
+          <div className='img-g '>
+            <img src='./Logos/investing.jpg' alt='ni-image1' className='w-100 ' />
           </div>
         </div>
 
         {/* --------------------------second-Part------------------- */}
 
-        <div className='second-contain w-full bg-[#25BE9B] p-12 justify-center'>
-          <div className='part-1 pt-5'>
+        <div className='second-contain w-full  bg-black p-12 justify-center'>
+          <div className='part-1 pt-5 '>
             <h1 className='part-1 font-bold text-white text-3xl text-center '>Why pay more for services that you don't avail?</h1>
           </div>
           <div className='second '>
@@ -77,20 +77,20 @@ const Home = () => {
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-8">
 
-              <div class="bg-white p-6 rounded-lg shadow-md text-center">
+              <div class="bg-white p-6 rounded-lg shadow-xl shadow-lime-300 text-center">
                 <img src="https://i.ibb.co/N97PXXy/img1.png" alt="" className="s-img max-w-[50%] mx-auto" />
                 <h2 className="f-22 font-semibold mb-4 mt-8">Discount Broking</h2>
                 <p className="text-gray-600 pb-4">Discount Broking is our primary product and what we specialise in.</p>
                 <p className="text-gray-600 pb-4">Zero Brokerage Investments</p>
               </div>
-              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <div className="bg-white p-6 rounded-lg shadow-xl shadow-lime-300  text-center">
                 <img src="https://i.ibb.co/Js2jMzn/img2.png" alt="" className="s-img max-w-[50%] mx-auto" />
                 <h2 className="f-22 font-semibold mb-4 mt-8">Discount Broking</h2>
                 <p className="text-gray-600 pb-4">Discount Broking is our primary product and what we specialise in.</p>
                 <p className="text-gray-600 pb-4">Zero Brokerage Investments</p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <div className="bg-white p-6 rounded-lg shadow-xl shadow-lime-300  text-center">
                 <img src="https://i.ibb.co/j3RRxPg/img3.png" alt="" className="s-img max-w-[50%] mx-auto" />
                 <h2 className="f-22 font-semibold mb-4 mt-8">Discount Broking</h2>
                 <p className="text-gray-600 pb-4">Discount Broking is our primary product and what we specialise in.</p>
@@ -98,7 +98,7 @@ const Home = () => {
               </div>
 
 
-              <div className="bg-white p-6 rounded-lg shadow-md text-center">
+              <div className="bg-white p-6 rounded-lg shadow-xl shadow-lime-300  text-center">
                 <img src="https://i.ibb.co/89qhz7V/img4.png" alt="" className="s-img max-w-[50%] mx-auto" />
                 <h2 className="f-22 font-semibold mb-4 mt-8">Discount Broking</h2>
                 <p className="text-gray-600 pb-4">Discount Broking is our primary product and what we specialise in.</p>
@@ -111,16 +111,16 @@ const Home = () => {
 
         {/* ------------------Our Blog--------------------- */}
 
-        <div className='bg-gray-100' >
-          <div className='max-w-[100] mx-auto'>
-            <h1 className='blog-h text-center '> Our Blog</h1>
+        <div className= 'container bg-gray-100' >
+          <div className=' '>
+            <h1 className='blog-h text-center my-10'> Our Blog</h1>
           </div>
-          <div className='all-Cards md:p-20 '>
+          <div className='all-Cards'>
             <Slider {...settings} className='slide '>
 
               <Card className='s-card-1 border-1 shadow-xl my-5'  >
                 <Card.Img variant="top" src="./Logos/blog.png" alt='no-img' />
-                <Card.Body className='card1 bg-[#a1e7d6] '>
+                <Card.Body className='card1 bg-lime-300'>
                   <Card.Title >
                     <h4 className='h-c text-gray-600 md:text-3lg'  >What is a Stock Split, how does it work, and its advantages
                     </h4>
@@ -134,7 +134,7 @@ const Home = () => {
 
               <Card className='s-card-2 border-1 shadow-xl my-5'  >
                 <Card.Img variant="top" src="./Logos/blog-2.png" alt='no-img' />
-                <Card.Body className='card1 bg-[#a1e7d6] '>
+                <Card.Body className='card1 bg-lime-300'>
                   <Card.Title >
                     <h4 className='h-c text-gray-600 md:text-3lg'  >What is a Stock Split, how does it work, and its advantages
                     </h4>
@@ -148,7 +148,7 @@ const Home = () => {
 
               <Card className='s-card-2 border-1 shadow-xl my-5'  >
                 <Card.Img variant="top" src="./Logos/Be a pro trader with this 7 key concepts.jpeg" />
-                <Card.Body className='card1 bg-[#a1e7d6] '>
+                <Card.Body className='card1 bg-lime-300 '>
                   <Card.Title >
                     <h4 className='h-c text-gray-600 md:text-3lg'  >What is a Stock Split, how does it work, and its advantages
                     </h4>
@@ -162,7 +162,7 @@ const Home = () => {
 
               <Card className='s-card-4 border-1 shadow-xl my-5'  >
                 <Card.Img variant="top" src="./Logos/Be a pro trader with this 7 key concepts.jpeg" />
-                <Card.Body className='card1 bg-[#a1e7d6] '>
+                <Card.Body className='card1 bg-lime-300'>
                   <Card.Title >
                     <h4 className='h-c text-gray-600 md:text-3lg'  >What is a Stock Split, how does it work, and its advantages
                     </h4>
@@ -176,6 +176,8 @@ const Home = () => {
             </Slider>
           </div>
         </div>
+
+        
         <div>
           <Investor/>
         </div>

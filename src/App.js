@@ -32,7 +32,7 @@ function App() {
 
   <Route path='/course' element={<Course/>}></Route>
   </Routes>
-  <Footer/>
+  {/* <Footer/> */}
  
     </> 
  );
