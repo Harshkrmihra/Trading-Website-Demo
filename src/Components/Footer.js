@@ -5,250 +5,169 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <footer className="footer p-20">
-        <div className="main-foooter">
-          <div className="f-container grid grid-cols-5 gap-4 pl-12 pr-10 pt-10">
-            <div className="f-container-1">
-              <div>
-                <img
-                  src="./Images/logo.png"
-                  alt="logo-t"
-                  className=" logo h-12"
-                />
-              </div>
-              <div>
-                <h4 className="f-text text-lg text-gray-400 pt-2">
-                  
-                  Powered By:*
-                </h4>
-                <img
-                  src="./Images/iifl_fevicon.png"
-                  alt="no=iilf"
-                  className="iilf h-14 mb-2"
-                />
-              </div>
-              <div className="sbi-addres">
-                <p className="f-p text-sm  text-gray-500 ">
-                  SEBI Regn. No: INZ000164132, PMS SEBI Regn. No: INP000002213,
-                  IA SEBI Regn. No: INA000000623, SEBI RA Regn. No: INH000000248
-                </p>
-                <p className="f-p text-green-600">
-                  * Authorised Partners of IIFL Securities
-                </p>
-              </div>
-            </div>
+      <footer className="container-fluid mx-auto py-8 bg-black text-white ">
+      <div className="grid grid-cols-2 md:grid-cols-3 p-4 lg:grid-cols-6 gap-4">
+        
+        <div className="col-span-2 md:col-span-2 text-center">
+          <img
+            src="https://i.ibb.co/bKWK5qm/Main-Logo.png"
+            alt="Facebook"
+            className="social-icon"
+          />
+        </div>
+        
+        <div className="col-span-1 md:col-span-1 text-center md:text-left">
+          <h3 className="text-lg font-bold mb-4">COMPANY</h3>
+          <ul className="leading-8">
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">Equity Charges</a></li>
+            <li className="hover:text-blue-500">
+              <a href="#" className="text-white ">Commodity Charges</a>
+            </li>
+            <li className="hover:text-blue-500">
+              <a href="#" className="text-white ">Currency Charges</a>
+            </li>
+            <li className="hover:text-blue-500"><a href="#" className="text-white hover:text-red-500">Fund Transfer</a></li>
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">Products</a></li>
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">About Us</a></li>
+          </ul>
+        </div>
 
-            <div className="f-container-2">
-              <div className="f-company">
-                <h1 className="f-text text-green-400 ga"> COMPANY</h1>
-              </div>
-              <div className="company-link ">
-                <Link
-                  to="#"
-                  className="text text-sm text-gray-800 hover:text-gray-800"
-                >
-                  Equity Charges
-                </Link>
-                <br />
-                <Link
-                  to="#"
-                  className="text text-sm text-gray-800  hover:text-gray-800"
-                >
-                  Commodity Charges
-                </Link>
-                <br />
-                <Link
-                  to="#"
-                  className="text text-sm text-gray-800  hover:text-gray-800"
-                >
-                  Currency Charges
-                </Link>
-                <br />
-                <Link
-                  to="#"
-                  className="text  text-sm  text-gray-800  hover:text-gray-800"
-                >
-                  
-                  Fund Transfer
-                </Link>
-                <br />
-                <Link
-                  to="#"
-                  className="text text-sm text-gray-800  hover:text-gray-800"
-                >
-                  Products
-                </Link>
-                <br />
-                <Link
-                  to="#"
-                  className="text text-sm text-gray-800  hover:text-gray-800"
-                >
-                  About Us
-                </Link>
-              </div>
-            </div>
+        
+        <div className="col-span-1 md:col-span-1 text-center md:text-left">
+          <h3 className="text-lg font-bold mb-4">SERVICES</h3>
+          <ul className="leading-8">
+            <li className="hover:text-blue-500">
+              <a href="#" className="text-white ">Discount Broking</a>
+            </li>
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">Premium Broking</a></li>
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">NRI Broking</a></li>
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">MF & SIPs</a></li>
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">Research</a></li>
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">Online Training</a></li>
+          </ul>
+        </div>
 
-            <div className="f-container-3">
-              <div className="f-company">
-                <h1 className="f-text text-green-400"> SERVICES</h1>
-              </div>
-              <div className="company-link">
-                <Link
-                  to="#"
-                  className="text text-sm text-gray-800 hover:text-gray-800"
-                >
-                  Discount Broking
-                </Link>
-                <br />
-                <Link
-                  to="#"
-                  className="text text-sm text-gray-800  hover:text-gray-800"
-                >
-                  Premium Broking
-                </Link>
-                <br />
-                <Link
-                  to="#"
-                  className="text text-sm text-gray-800  hover:text-gray-800"
-                >
-                  NRI Broking
-                </Link>
-                <br />
-                <Link
-                  to="#"
-                  className="text  text-sm  text-gray-800  hover:text-gray-800"
-                >
-                  
-                  MF & SIPs
-                </Link>
-                <br />
-                <Link
-                  to="#"
-                  className="text text-sm text-gray-800  hover:text-gray-800"
-                >
-                  Research
-                </Link>
-                <br />
-                <Link
-                  to="#"
-                  className="text text-sm text-gray-800  hover:text-gray-800"
-                >
-                  Online Training
-                </Link>
-              </div>
-            </div>
-
-            <div className="f-container-4">
-              <div className="f-company">
-                <h1 className="f-text text-green-400"> SUPPORT</h1>
-              </div>
-              <div className="company-link">
-                <Link
-                  to="#"
-                  className="text text-sm text-gray-800 hover:text-gray-800"
-                >
-                  Contact Us
-                </Link>
-                <br />
-                <Link
-                  to="#"
-                  className="text text-sm  text-gray-800  hover:text-gray-800"
-                >
-                  Online Helpdesk
-                </Link>
-                <br />
-                <Link
-                  to="#"
-                  className="text text-sm text-gray-800  hover:text-gray-800"
-                >
-                  Blogs
-                </Link>
-                <br />
-                <Link
-                  to="#"
-                  className="text  text-sm  text-gray-800  hover:text-gray-800"
-                >
-                  
-                  Careers
-                </Link>
-                <br />
-                <Link
-                  to="#"
-                  className="text text-sm text-gray-800  hover:text-gray-800"
-                >
-                  Corporate Office
-                </Link>
-                <br />
-                <Link
-                  to="#"
-                  className="text text-sm text-gray-800  hover:text-gray-800"
-                >
-                  Course
-                </Link>
-              </div>
-            </div>
-
-            <div className="f-container-5">
-              <div>
-                <img
-                  src="./Images/member-india.png"
-                  alt="logo-t"
-                  className=" logo-while  "
-                />
-              </div>
-            </div>
-          </div>
+        
+        <div className="col-span-1 md:col-span-1 text-center md:text-left">
+          <h3 className="text-lg font-bold mb-4">SUPPORT</h3>
+          <ul className="leading-8">
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">Contact Us</a></li>
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">Online Helpdesk</a></li>
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">Blogs</a></li>
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">Careers</a></li>
+            <li className="hover:text-blue-500">
+              <a href="#" className="text-white ">Corporate Office</a>
+            </li>
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">Course</a></li>
+          </ul>
+        </div>
+        
+        <div className="col-span-1 md:col-span-1 text-center md:text-left">
+          <h3 className="text-lg font-bold mb-4">Quick Links:</h3>
+          <ul className="leading-8">
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">Disclaimer</a></li>
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">Privacy Policy</a></li>
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">Broker Norms</a></li>
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">Refund Policy</a></li>
+            <li className="hover:text-blue-500">
+              <a href="#" className="text-white ">Terms & Conditions</a>
+            </li>
+            <li className="hover:text-blue-500"><a href="#" className="text-white ">Disclaimer</a></li>
+          </ul>
+        </div>
+        
+      </div>
+      <hr className="h-0.5 my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+      <div className="flex flex-col md:flex-row items-center">
+        <div className="w-full md:w-1/4 p-4">
+          <button className="w-full bg-green-500 text-white py-2 px-4 rounded">
+            Open Account
+          </button>
+        </div>
 
 
-          <div className="flex">
-            <div className=" flex-none border-solid  border-green-500 border-2 text-center pl-10 pt-2 pr-10  rounded-b-full rounded-tr-full w-60 h-12 ml-14 ">
-              <Link to="/" className="f-opn uppercase  "> open an account</Link>
-            </div>
-
-            <div className=" link-b-f grow h-14 ml-9 pt-3">
-              <a href="/" className="f-link-1 text-sm text-gray-500 hover:text-gray-500">Disclaimer</a>
-              <div className="vr text-black text-lg ml-4 mr-4" />
-              <a href="/" className="f-link-1 text-sm text-gray-500 hover:text-gray-500">Privacy Policy </a>
-              <div className="vr text-black text-lg ml-4 mr-4" />
-              <a href="/" className="f-link-1 text-sm text-gray-500 hover:text-gray-500">Broker Norms</a>
-              <div className="vr text-black text-lg ml-4 mr-4" />
-              <a href="/" className="f-link-1 text-sm text-gray-500 hover:text-gray-500">Refundr Policy</a>
-              <div className="vr text-black text-lg ml-4 mr-4" />
-              <a href="/" className="f-link-1 text-sm text-gray-500 hover:text-gray-500">Terms & Conditions</a>
-              <div className="vr text-black text-lg ml-4 mr-4" />
-              <a href="/" className="f-link-1 text-sm text-gray-500 hover:text-gray-500">Disclaimer</a>
-            </div>
-          </div>
-
-          <div className=" quick flex">
-            <div className="f-pdiv flex-none pl-16 pt-3"> 
-            <p className="f-p   text-sm"> Quick Links:</p>
-            </div>
-           <div className="quick-link grow h-14 pl-20 pt-3">
-            <Link to="#" className="quick-l text-sm text-gray-500 hover:text-gray-500">Best Share Broker</Link>
-            <div className="vr text-black text-lg ml-4 mr-4" />
-            <Link to="#" className="quick-l text-sm text-gray-500 hover:text-gray-500">Best Share Market Trading Company</Link>
-            <div className="vr text-black text-lg ml-4 mr-4" />
-            <Link to="#" className="quick-l text-sm text-gray-500 hover:text-gray-500"> Best Options Trading Services</Link>
-            <div className="vr text-black text-lg ml-4 mr-4" />
-            <Link to="#" className="quick-l text-sm text-gray-500 hover:text-gray-500">Intraday Trading Services</Link>
-            <div className="vr text-black text-lg ml-4 mr-4" />
-            <Link to="#" className="quick-l text-sm text-gray-500 hover:text-gray-500">Stock Broker</Link>
-            <div className="vr text-black text-lg ml-4 mr-4" />
-            <Link to="#" className="quick-l text-sm text-gray-500 hover:text-gray-500">Option Tradingr</Link>
-            <div className="vr text-black text-lg ml-4 mr-4" />
-            <Link to="#" className="quick-l text-sm text-gray-500 hover:text-gray-500"> Market Analysis</Link>
-            <div className="vr text-black text-lg ml-4 mr-4" />
-            <Link to="#" className="quick-l text-sm text-gray-500 hover:text-gray-500">Intraday Trading</Link>
-            <div className="vr text-black text-lg ml-4 mr-4" />
-            <Link to="#" className="quick-l text-sm text-gray-500 hover:text-gray-500">Equity  Trading</Link>
-            <div className="vr text-black text-lg ml-4 mr-4" />
-            <Link to="#" className="quick-l text-sm text-gray-500 hover:text-gray-500">Intraday Trading</Link>
-          
-           </div>
+        <div className="flex-1 p-4">
+          <div className="flex flex-row flex-wrap gap-2 justify-around">
+            <a
+              href="#"
+              className="border-r border-gray-300 py-2 px-4 no-wrap text-white "
+              >Best Share Broker</a
+            >
+            <a
+              href="#"
+              className="border-r border-gray-300 py-2 px-4 no-wrap text-white "
+              >Best Share Market Trading Company</a
+            >
+            <a
+              href="#"
+              className="border-r border-gray-300 py-2 px-4 no-wrap text-white "
+              >Best Options Trading Services</a
+            >
+            <a
+              href="#"
+              className="border-r border-gray-300 py-2 px-4 no-wrap text-white "
+              >Intraday Trading Services</a
+            >
+            <a
+              href="#"
+              className="border-r border-gray-300 py-2 px-4 no-wrap text-white "
+              >Stock Broker</a
+            >
+            <a
+              href="#"
+              className="border-r border-gray-300 py-2 px-4 no-wrap text-white "
+              >Option Trading</a
+            >
+            <a
+              href="#"
+              className="border-r border-gray-300 py-2 px-4 no-wrap text-white "
+              >Market Analysis</a
+            >
+            <a
+              href="#"
+              className="border-r border-gray-300 py-2 px-4 no-wrap text-white "
+              >Intraday Trading</a
+            >
+            <a
+              href="#"
+              className="border-r border-gray-300 py-2 px-4 no-wrap text-white "
+              >Equity Trading</a
+            >
+            {/* <a href="#" className="border-r border-gray-300 py-2 px-4 no-wrap">Equity Trading</a> */}
+            <a href="#" className="py-2 px-4 no-wrap text-white "
+              >Intraday Trading</a
+            >
           </div>
         </div>
-      </footer>
+      </div>
+      <hr className="h-0.5 my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+      <div className="container mx-auto p-4 text-center lg:text-left md:text-left">
+        <p>
+          Issued in the interest of investors: Prevent Unauthorised transactions
+          in your trading and Demat account. Update your mobile numbers/email
+          IDs with Tradingbells. Receive alerts and information of all debit and
+          other important transactions in your trading and Demat account
+          directly from Exchange/Depository on your mobile/email at the end of
+          the day.
+        </p>
+        <br/>
+        <p>
+          KYC is a onetime exercise while dealing in securities markets. Once
+          KYC is done through a SEBI registered intermediary (broker, DP, Mutual
+          Fund etc.), you need not undergo the same process again when you
+          approach another intermediary.
+        </p>
+        <br/>
+        <p>
+          No need to issue cheques by investors while subscribing to IPO. Just
+          write the bank account number and sign in the application form to
+          authorise your bank to make payment in case of allotment. No worries
+          of refund as money remains in investor's account.
+        </p>
+        <br/>
+        <p className="text-white  text-center underline">2021-22, TradingBells All rights reserved</p>
+      </div>
+    </footer>
     </>
   );
 };
