@@ -52,19 +52,35 @@ const Home = () => {
 
         {/* --------------------------second-Part------------------- */}
 
-        <div className='second-contain w-full  bg-black p-12 justify-center'>
+        <div className='second-contain w-full bg-black  justify-center'>
           <div className='part-1 pt-5 '>
-            <h1 className='part-1 font-bold text-white text-3xl text-center '>Why pay more for services that you don't avail?</h1>
+            <h1 className='part-1 font-bold text-white text-xl xl:text-3xl text-center '>Why pay more for services that you don't avail?</h1>
           </div>
-          <div className='second '>
-            <div className='part-2'>
-              <img src='./Logos/$200.png' alt='no-200' className='imgt w-50 ' />
+          <div className='second overflow-hidden grid grid-cols-1 md:grid-cols-1 md:items-center md:justify-center lg:grid-cols-2 xl:gap-48 items-center justify-center'>
+            <div className='part-2 items-center'>
+              <img src='./Logos/$200.png' alt='no-200' className='imgtw-68 ' />
             </div>
-            <div className='part-3'></div>
+            
+            <div class="  backdrop-blur-md bg-white/20  rounded shadow-xl shadow-slate-600 p-8 m-4 md:max-w-md md:mx-auto ">
+      <span class="block w-full text-2xl text-center uppercase font-extrabold mb-4   bg-gradient-to-t to-green-400 from-red-600  text-transparent bg-clip-text">Login</span>      
+        <form class="mb-4" action="/" method="post">
+          <div class="mb-4 md:w-full">
+            <label for="email" class="block text-lg text-red-500 font-bold mb-1">Username or Email</label>
+            <input class="w-full border rounded p-2 outline-none focus:shadow-outline" type="email" name="email" id="email" placeholder="Username or Email"/>
+          </div>
+          <div class="mb-6 md:w-full">
+            <label for="password" class="block text-lg text-red-500 font-bold mb-1">Password</label>
+            <input class="w-full border rounded p-2 outline-none focus:shadow-outline" type="password" name="password" id="password" placeholder="Password"/>
+          </div>
+          <button class="bg-green-500  hover:bg-green-700 text-white uppercase text-sm font-semibold px-4 py-2 rounded">Login</button>
+        </form>
+        <a class="text-red-700 text-center font-semibold text-md" href="/login">Forgot password?</a>
+    </div>
             <div>
 
             </div>
           </div>
+         
 
         </div>
 

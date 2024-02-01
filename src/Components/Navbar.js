@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
     <Header/>
-    <div className="sticky top-0 start-0  py-2 bg-black  shadow-inner  shadow-slate-300 ">
+    <div className="sticky top-0 start-0  py-2 bg-black  shadow-inner  shadow-slate-300 z-10 ">
       <div className="flex sticky top-0 start-0 justify-between items-cente   mx-10 bg-black "> 
         <a href="/">
         <img src="./Logos/Main-Logo.png" alt="" className="h-img max-w-[30vh]" />
