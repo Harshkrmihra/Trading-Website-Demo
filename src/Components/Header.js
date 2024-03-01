@@ -1,24 +1,38 @@
 import React from 'react'
-import { NavLink } from 'react-bootstrap'
+// import { NavLink } from 'react-bootstrap'
 
 const Header = () => {
   return (
    <>
-     <div className="topNavbar hidden md:h-14 md:place-items-center md:flex md:justify-end  bg-black opacity-95 Md:max-h-24 md:space-x-4 md:p-2 ">
-        <div className="top flex text-white   ">
-          <NavLink to="/" ClassName="top-link">
-            Blog
-          </NavLink>
-          <div className="vr h-7  mt-2" />
-
-          <NavLink to="/" ClassName="top-link">
-            Help Desk
-          </NavLink>
-          <div className="vr h-7  mt-2 " />
-          <NavLink to="/" ClassName="top-link">
-            Contact us
-          </NavLink>
-          <div className="vr h-7  mt-2" />
+     <div className="topNavbar hidden md:h-14 md:place-items-center md:flex md:justify-end  bg-gray-800 opacity-95 Md:max-h-24 md:space-x-4 md:p-7 ">
+        <div className="top flex text-white  ">
+        <ul className="flex gap-10 text-cente" >
+              <li>
+                <a
+                  className="links  text-white  hover:te hover:font-semibold   "
+                  href="/blog"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  className="links  text-white  hover:font-semibold"
+                  href="/help"
+                >
+                  Help Desk
+                </a>
+              </li>
+              <li>
+                <a
+                  className="links  text-white  hover:font-semibold "
+                  href="/contact"
+                >
+                  Contact Us
+                </a>
+              </li>
+              </ul>
+          <div className="vr h-10 text-center  ml-5" />
         </div>
         <div className="top-socialIcon flex space-x-4 place-items-center  ">
           <img

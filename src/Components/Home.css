@@ -7,7 +7,7 @@
 button.slick-prev:before{
   
       font-size: 1rem;
-      margin: 0;
+   
       color: #25BE9B;
 }
 button.slick-next:before{
@@ -24,4 +24,16 @@ button.slick-next:before{
 
 
 } */
+.s-cart{
+    cursor: pointer;
+    -webkit-box-shadow:0px 0px 41px 0px rgba(45, 255, 195, 0.256);
+-moz-box-shadow: 0px 0px 41px 0px rgba(45,255,196,0.26);
+box-shadow: 0px 0px 41px 0px rgba(45,255,196,0.26);
+}
+.Login-form:hover{
+    cursor: pointer;
+    -webkit-box-shadow:0px 0px 41px 0px rgba(111, 113, 113, 0.455);
+-moz-box-shadow: 0px 0px 41px 0px rgba(111, 113, 113, 0.455);
+box-shadow: 0px 0px 41px 0px rgba(111, 113, 113, 0.455);
+}
 

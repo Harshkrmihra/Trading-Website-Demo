@@ -11,12 +11,7 @@ import Funds from './Components/Funds';
 import Course from './Components/Course';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Footer from './Components/Footer';
-import Header from './Components/Header';
-
-
-
-
-
+import Blog from './Components/Blog';
 function App() {
 
   return (
@@ -29,8 +24,8 @@ function App() {
   <Route path='/product' element={<Product/>}></Route>
   <Route path='/about' element={<About/>}></Route>
   <Route path='/price' element={<Pricing/>}></Route>
-
   <Route path='/course' element={<Course/>}></Route>
+ <Route path='/blog' element={<Blog/>}></Route>
   </Routes>
   <Footer/>
  
