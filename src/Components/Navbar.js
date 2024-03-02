@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <>
       <Header />
-      <div className="sticky max top-0 start-0  py-2 bg-[#2B384C]">
+      <div className="sticky max top-0 start-0  py-2 bg-[#2B384C] z-20">
         <div className="flex sticky top-0 start-0 justify-between items-cente   mx-10 bg-[#2B384C]">
           <a href="/">
             <img
