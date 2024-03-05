@@ -88,9 +88,9 @@ const Home = () => {
             <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-color11 to-color7 text-[6vh] lg:text-[15vh] md:text-[7.5vh] md:tracking-wider lg:tracking-widest uppercase font-bold">
               Investing axis
             </h1>
-            <div className="md:py-5 ">
+            <div className=" md:py-5 ">
               <label
-                class=" bg-color2 min-w-sm max-w-xl hidden md:flex flex-col  md:flex-row items-start justify-start border py- px-2 rounded-2xl gap-2 shadow-2xl focus-within:border-gray-300"
+                class="home-search  bg-color2 min-w-sm max-w-xl hidden md:flex flex-col  md:flex-row items-start justify-start border py- px-2 rounded-2xl gap-2 shadow-2xl focus-within:border-gray-300"
                 for="search-bar"
               >
                 <input
