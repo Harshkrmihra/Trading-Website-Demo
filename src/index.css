@@ -1,18 +1,45 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   * {
-    font-family: "Proxima Nova", system-ui, sans-serif;
+    font-family: "Assistant", sans-serif;
+    font-weight: 600;
+    font-style: normal;
   }
 }
-.off-list >li{
-  margin: 3vh;
+
+.top {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
-.logo-text{
+.home-container {
+  background: url(../public/Images/investing3.webp);
+  background-size: cover;
+  height: 0vh;
+}
+
+.home-2 {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.home-service {
+  box-shadow: rgba(22, 138, 156, 0.482) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.card-i {
+  box-shadow: rgba(17, 61, 60, 0.544) 0px 30px 60px -12px inset,
+    rgba(56, 164, 161, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* .off-list >li{
+  margin: 3vh;
+} */
+/* .logo-text{
   background: linear-gradient(135deg, #344e41, #588157, #a3b18a, #a7c957);
   filter: drop-shadow(0vh 0 1vh  rgb(12, 144, 80) );
   -webkit-background-clip: text;
@@ -31,5 +58,4 @@
   100% { 
     background-position: 50% 0%;
   }
-}
-
+} */

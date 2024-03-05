@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import { MdOutlineKeyboardDoubleArrowLeft} from "react-icons/md";
-import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md"
+// import { MdOutlineKeyboardDoubleArrowLeft} from "react-icons/md";
+// import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md"
 
 const Investor = () => {
     
@@ -59,10 +59,10 @@ const Investor = () => {
     
   return (
   <>
-  <div className="container-fluid  py-10  bg-gradient-to-r from-slate-900 to-slate-700 ">
-        <h2 className="text-center text-white font-bold text-5xl"> Responsive </h2>
+  <div className="container-fluid  py-10  bg-color1 ">
+        <h2 className="text-center text-black font-bold text-5xl"> Responsive </h2>
 
-        <div className="container-fluid max-w-[80%]">
+        <div className="container-fluid max-w-[80%] flex-wrap">
         <Slider
         ref={slider => {
           sliderRef = slider;
@@ -70,7 +70,7 @@ const Investor = () => {
         {...settings}
       >
    {/* ......card-1....... */}
-            <div class="flex flex-col gap-2  bg-white dark:bg-neutral-900 p-5 rounded-md mt-8 shadow-md hover:scale-105 hover:duration-150 duration-150">
+            <div class=" card-i flex flex-col gap-2  bg-color2 dark:bg-neutral-900 p-5 rounded-md mt-8 shadow-md hover:scale-105 hover:duration-150 duration-150">
     <div class="flex flex-row justify-between w-full">
       <div class="flex flex-row justify-between w-full">
         {/* <!-- User's name --> */}
@@ -113,7 +113,7 @@ const Investor = () => {
     </div>
   </div>
    {   /* .......card-2....... */}
-                    <div class="flex flex-col gap-2  bg-white dark:bg-neutral-900 p-5 rounded-md mt-8 shadow-md hover:scale-105 hover:duration-150 duration-150">
+                    <div class=" card-i flex flex-col gap-2  bg-color2 dark:bg-neutral-900 p-5 rounded-md mt-8 shadow-md hover:scale-105 hover:duration-150 duration-150">
     <div class="flex flex-row justify-between w-full">
       <div class="flex flex-row justify-between w-full">
         {/* <!-- User's name --> */}
@@ -156,7 +156,7 @@ const Investor = () => {
     </div>
   </div>   
   {   /* .......card-3....... */}
-            <div class="flex flex-col gap-2  bg-white dark:bg-neutral-900 p-5 rounded-md mt-8 shadow-md hover:scale-105 hover:duration-150 duration-150">
+            <div class=" card-i flex flex-col gap-2  bg-color2 dark:bg-neutral-900 p-5 rounded-md mt-8 shadow-md hover:scale-105 hover:duration-150 duration-150">
     <div class="flex flex-row justify-between w-full">
       <div class="flex flex-row justify-between w-full">
         {/* <!-- User's name --> */}
@@ -200,7 +200,7 @@ const Investor = () => {
   </div>
 
   {   /* .......card-4....... */}
-            <div class="flex flex-col gap-2  bg-white dark:bg-neutral-900 p-5 rounded-md mt-8 shadow-md hover:scale-105 hover:duration-150 duration-150">
+            <div class=" card-i flex flex-col gap-2  bg-color2 dark:bg-neutral-900 p-5 rounded-md mt-8 shadow-md hover:scale-105 hover:duration-150 duration-150">
     <div class="flex flex-row justify-between w-full">
       <div class="flex flex-row justify-between w-full">
         {/* <!-- User's name --> */}
@@ -243,7 +243,7 @@ const Investor = () => {
     </div>
   </div>
  {   /* .......card-5....... */}
-            <div class="flex flex-col gap-2  bg-white dark:bg-neutral-900 p-5 rounded-md mt-8 shadow-md hover:scale-105 hover:duration-150 duration-150">
+            <div class=" card-i flex flex-col gap-2  bg-color2 dark:bg-neutral-900 p-5 rounded-md mt-8 shadow-md hover:scale-105 hover:duration-150 duration-150">
     <div class="flex flex-row justify-between w-full">
       <div class="flex flex-row justify-between w-full">
         {/* <!-- User's name --> */}
@@ -286,7 +286,7 @@ const Investor = () => {
     </div>
   </div>
    {   /* .......card-6....... */}
-            <div class="flex flex-col gap-2  bg-white dark:bg-neutral-900 p-5 rounded-md mt-8 shadow-md hover:scale-105 hover:duration-150 duration-150">
+            <div class=" card-i flex flex-col gap-2  bg-color2 dark:bg-neutral-900 p-5 rounded-md mt-8 shadow-md hover:scale-105 hover:duration-150 duration-150">
     <div class="flex flex-row justify-between w-full">
       <div class="flex flex-row justify-between w-full">
         {/* <!-- User's name --> */}
@@ -332,10 +332,10 @@ const Investor = () => {
 
           <div className="text-center pt-3">
         <button className="button text-white text-3xl  " onClick={previous}>
-        <MdOutlineKeyboardDoubleArrowLeft />
+        <img src="./contact-icon/back.png" alt="no" />
         </button>
         <button className="button text-white ml-5 text-3xl" onClick={next}>
-        <MdOutlineKeyboardDoubleArrowRight />
+        <img src="./contact-icon/forward.png" alt="no" />
         </button>
       </div>
 

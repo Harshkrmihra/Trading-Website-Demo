@@ -58,21 +58,22 @@ const Funds = () => {
 
 
   return (
-   <>
+   <> 
    <div className='main-fund '>
-    <div className="container text-center">
-      <h1 >FUND TRANSFER</h1>
-      <hr className=""/>
-    </div>
+   <div className=" container my-5 ">
+    <h1 className=" text-center">FUND TRANSFER</h1>
+       <hr className="  bg-black font-extrabold"/>
+   </div>
+ 
 
 
-   <section className="max-w-full" aria-multiselectable="false">
+   <section className="container flex-wrap" aria-multiselectable="false">
         <ul
           className="flex items-center border-b border-slate-200"
           role="tablist"
           ref={wrapperRef}
         >
-          <li className="flex-1" role="presentation ">
+          <li className="flex-1" role="presentation">
             <button
               className={`-mb-px inline-flex h-10 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-5 text-sm font-medium tracking-wide transition duration-300 hover:bg-emerald-50 hover:stroke-emerald-600 focus:bg-emerald-50 focus-visible:outline-none disabled:cursor-not-allowed ${
                 tabSelected.currentTab === 1
@@ -111,10 +112,11 @@ const Funds = () => {
               }`}
               onClick={() => setTabSelected({ ...tabSelected, currentTab: 2 })}
             >
+
               <span>Tab 2</span>
             </button>
           </li>
-          <li className="flex-1" role="presentation ">
+          {/* <li className="flex-1" role="presentation ">
             <button
               className={`-mb-px inline-flex h-10 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-5 text-sm font-medium tracking-wide transition duration-300 hover:bg-emerald-50 hover:stroke-emerald-600 focus:bg-emerald-50 focus-visible:outline-none disabled:cursor-not-allowed ${
                 tabSelected.currentTab === 3
@@ -134,7 +136,7 @@ const Funds = () => {
             >
               <span>Tab 3</span>
             </button>
-          </li>
+          </li> */}
         </ul>
         <div className="">
           <div
@@ -147,12 +149,38 @@ const Funds = () => {
             aria-labelledby="tab-label-1b"
             tabindex="-1"
           >
-            <p>
-              What is the recipe for successful achievement? To my mind there
-              are just four essential ingredients: Choose a career you love,
-              give it the best there is in you, seize your opportunities, and be
-              a member of the team.
-            </p>
+           <div class="table-responsive">
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th scope="col">
+Method</th>
+				<th scope="col">Bank Account</th>
+				<th scope="col">Process</th>
+				<th scope="col">Time Taken</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">UPI</th>
+				<td>UPI Enabled Bank</td>
+				<td>Login to your online trading software and transfer using the UPI Transfer. Enter the amount and UPI ID. IIFL Markets will send a collect request to the Virtual Payment Address (VPA). You will receive a mobile notification in your UPI app. Accept it and the payment is complete!</td>
+				<td>1-2 Minutes</td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>Jacob</td>
+				<td>Thornton</td>
+				<td>@fat</td>
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td colspan="2">Larry the Bird</td>
+				<td>@twitter</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
           </div>
           <div
             className={`px-5 py-4 ${
@@ -171,7 +199,7 @@ const Funds = () => {
               must master it as a whole.
             </p>
           </div>
-          <div
+          {/* <div
             className={`px-5 py-4 ${
               tabSelected.currentTab === 3 ? "" : "hidden"
             }`}
@@ -187,7 +215,7 @@ const Funds = () => {
               duties; because, even if the results are slated to arrive, they
               cannot do so without the performance of work.
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
    </div>

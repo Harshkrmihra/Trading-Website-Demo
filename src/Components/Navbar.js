@@ -13,8 +13,8 @@ const Navbar = () => {
   return (
     <>
       <Header />
-      <div className="sticky max top-0 start-0  py-2 bg-[#2B384C] z-20">
-        <div className="flex sticky top-0 start-0 justify-between items-cente   mx-10 bg-[#2B384C]">
+      <div className=" top sticky max top-0 start-0  h-30  py-2 bg-color5  z-20">
+        <div className="flex sticky top-0 start-0 justify-between   mx-20 my-2 bg-inherit">
           <a href="/">
             <img
               src="./Logos/Main-Logo.png"
@@ -22,11 +22,11 @@ const Navbar = () => {
               className="h-img max-w-[30vh]"
             />
           </a>
-          <div className="hidden md:flex lg:flex xl:flex 2xl:flex items-center ">
+          <div className="hidden md:flex lg:flex xl:flex 2xl:flex items-center  ">
             <ul className="flex gap-10 text-center ">
               <li>
                 <a
-                  className="links  text-red-500 font-semibold hover:font-semibold hover:no-underline   lg:hover:no-underline lg:hover:text-white "
+                  className="links text-color11  text-[23px] font-semibold hover:font-semibold hover:no-underline  lg:hover:no-underline hover:text-color2 "
                   href="/"
                 >
                   Home
@@ -34,7 +34,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="links  text-red-500 font-semibold hover:font-semibold hover:no-underline   lg:hover:no-underline lg:hover:text-white "
+                  className="links text-color11 text-[23px] font-semibold hover:font-semibold hover:no-underline   lg:hover:no-underline hover:text-color2 "
                   href="/product"
                 >
                   Products
@@ -42,7 +42,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="links  text-red-500 font-semibold hover:font-semibold hover:no-underline   lg:hover:no-underline lg:hover:text-white "
+                  className="links text-color11 text-[23px] font-semibold hover:font-semibold hover:no-underline   lg:hover:no-underline hover:text-color2 "
                   href="/price"
                 >
                   Pricing
@@ -50,7 +50,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="links  text-red-500 font-semibold hover:font-semibold hover:no-underline   lg:hover:no-underline lg:hover:text-white "
+                  className="links text-color11 text-[23px] font-semibold hover:font-semibold hover:no-underline   lg:hover:no-underline hover:text-color2 "
                   href="/about"
                 >
                   About Us
@@ -58,7 +58,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="links  text-red-500 font-semibold hover:font-semibold hover:no-underline   lg:hover:no-underline lg:hover:text-white "
+                  className="links text-color11 text-[23px] font-semibold hover:font-semibold hover:no-underline   lg:hover:no-underline hover:text-color2 "
                   href="/fund"
                 >
                   Funds
@@ -66,7 +66,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  className="links  text-red-500 font-semibold hover:font-semibold hover:no-underline   lg:hover:no-underline lg:hover:text-white "
+                  className="links text-color11 text-[23px] font-semibold hover:font-semibold hover:no-underline   lg:hover:no-underline hover:text-color2 "
                   href="/courese"
                 >
                   Courses
