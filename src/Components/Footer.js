@@ -1,11 +1,12 @@
 import React from "react";
+import "./Footer.css"
 import 
   {Tooltip}from "@material-tailwind/react";
 
 const Footer = () => {
   return (
     <>
-      <footer className="container-fluid mx-auto py-8 bg-black text-white ">
+      <footer className=" footer container-fluid mx-auto py-8 bg-black text-white ">
         <div className="grid grid-cols-2 md:grid-cols-3 p-4 lg:grid-cols-6 gap-4">
           <div className="col-span-2 space-y-10 md:col-span-2 text-center ">
             <img

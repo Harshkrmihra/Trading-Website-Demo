@@ -5,7 +5,7 @@ import { MdLocationOn } from "react-icons/md";
 const Contactinformation = () => {
   return (
     <>
-    <div className="bg-gradient-to-r from-slate-900 to-slate-700 py-5  "  >
+    <div className=" cont-h bg-gradient-to-r from-slate-900 to-slate-700 py-5  "  >
      <div className="container-fluid py-10 flex flex-wrap justify-center gap-5 bg-gradient-to-r from-slate-900 to-slate-700">
           <div className="contact-1 ">
             <div class="bg-sky-700 rounded-2xl shadow-sm shadow-sky-500 outline outline-slate-400 -outline-offset-8 ">

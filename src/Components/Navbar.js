@@ -4,6 +4,7 @@ import { MdOutlineMenuOpen } from "react-icons/md";
 // import { IoMdClose } from "react-icons/io";
 import Header from "./Header";
 
+
 const Navbar = () => {
   const [show, setShow] = useState(false);
 
@@ -13,7 +14,7 @@ const Navbar = () => {
   return (
     <>
       <Header />
-      <div className=" top sticky max top-0 start-0  h-30  py-2 bg-color5  z-20">
+      <div className=" top sticky max top-0 start-0  h-30  py-2 bg-color5 " style={{ zIndex: "149" }}>
         <div className="flex sticky top-0 start-0 justify-between   mx-20 my-2 bg-inherit">
           <a href="/">
             <img
@@ -22,7 +23,7 @@ const Navbar = () => {
               className="h-img max-w-[30vh]"
             />
           </a>
-          <div className="hidden md:flex lg:flex xl:flex 2xl:flex items-center  ">
+          <div className=" mhidden md:flex lg:flex xl:flex 2xl:flex items-center  ">
             <ul className="flex gap-10 text-center ">
               <li>
                 <a

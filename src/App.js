@@ -13,24 +13,24 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Footer from './Components/Footer';
 import Blog from './Components/Blog';
 function App() {
-
   return (
-    <> 
-    
-  <Navbar/>
-  <Routes>
-  <Route path='/'element={<Home/>}></Route>
-  <Route path='/fund' element={<Funds/>}></Route> 
-  <Route path='/product' element={<Product/>}></Route>
-  <Route path='/about' element={<About/>}></Route>
-  <Route path='/price' element={<Pricing/>}></Route>
-  <Route path='/course' element={<Course/>}></Route>
- <Route path='/blog' element={<Blog/>}></Route>
-  </Routes>
-  <Footer/>
- 
-    </> 
- );
+    <>
+      {/* <!-- Navbar component goes here --> */}
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/fund" element={<Funds />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/price" element={<Pricing />} />
+        <Route path="/course" element={<Course />} />
+        <Route path="/blog" element={<Blog />} />
+      </Routes>
+      {/* <!-- Footer component goes here --> */}
+      <Footer />
+    </>
+  );
 }
+
 
 export default App;

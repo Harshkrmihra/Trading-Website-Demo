@@ -10,39 +10,35 @@ import Home2 from "./Home2";
 // import RegistrationForm from './RegistrationForm';
 
 const Home = () => {
-
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
-      const handleScroll = () => {
-          const element = document.getElementById("animated-div");
-          const position = element.getBoundingClientRect();
+    const handleScroll = () => {
+      const element = document.getElementById("animated-div");
+      const position = element.getBoundingClientRect();
 
-          // Checking whether fully visible
-          if (position.top >= 0 && position.bottom <= window.innerHeight) {
-              setAnimate(true);
-          } else {
-              setAnimate(false);
-          }
-      };
+      // Checking whether fully visible
+      if (position.top >= 0 && position.bottom <= window.innerHeight) {
+        setAnimate(true);
+      } else {
+        setAnimate(false);
+      }
+    };
 
-      window.addEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
-      // Cleanup function
-      return () => {
-          window.removeEventListener("scroll", handleScroll);
-      };
+    // Cleanup function
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []); // Empty dependency array to run effect only once on component mount
 
-
-
-
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
-    <img src="./contact-icon/forward.png"  alt="prevArrow" {...props} />
+    <img src="./contact-icon/forward.png" alt="prevArrow" {...props} />
   );
 
   const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
-    <img src="./contact-icon/back.png"  alt="nextArrow" {...props} />
+    <img src="./contact-icon/back.png" alt="nextArrow" {...props} />
   );
 
   const settings = {
@@ -82,15 +78,19 @@ const Home = () => {
   return (
     <>
       <div className="home ">
-        <div className="hom ">
-          <img src="./contact-icon/photo.jpeg" alt="no" className="" />
-          <div className="absolute bg-inherit   top-[15vh] left-[10vh] lg:top-[30vh] lg:left-[30vh] md:top-[20vh] md:left-[5vh] ">
-            <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-color11 to-color7 text-[6vh] lg:text-[15vh] md:text-[7.5vh] md:tracking-wider lg:tracking-widest uppercase font-bold">
+        <div className="hom">
+          <img
+            src="./contact-icon/photo.avif"
+            alt="no"
+            className=" w-[100vw]"
+          />
+          <div className="absolute bg-inherit   top-[15vh] left-[10vh] lg:top-[30vh] lg:left-[10vw] md:top-[20vh] md:left-[5vh] ">
+            <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-color11 to-color7 text-[7vw] md:tracking-wider lg:tracking-widest uppercase font-bold">
               Investing axis
             </h1>
-            <div className=" md:py-5 ">
+            <div className=" md:pt-[2vw] ">
               <label
-                class="home-search  bg-color2 min-w-sm max-w-xl hidden md:flex flex-col  md:flex-row items-start justify-start border py- px-2 rounded-2xl gap-2 shadow-2xl focus-within:border-gray-300"
+                class="home-search hidden  bg-color2 min-w-sm max-w-[40vw] md:flex flwx-wrap items-start justify-start  rounded-2xl gap-2"
                 for="search-bar"
               >
                 <input
@@ -125,20 +125,25 @@ const Home = () => {
                 </button>
               </label>
             </div>
-            <div id="animated-div" className={`home-p w-[50%] py-5 ${animate ? 'animate-fade-up' : ''}`}>
-            <p className="md:text-[09vh]">
+            <div
+              id="animated-div"
+              className={`home-p w-[50%] tracking-widest text-color11   md:py-5 ${
+                animate ? "animate-fade-up" : ""
+              }`}
+            >
+              <p className="md:text-[4vw]">
                 Investment For The Future And To The Moon
-            </p>
-        </div>
+              </p>
+            </div>
           </div>
         </div>
 
         {/* --------------------------second-Part------------------- */}
 
-       <Home2/>
+        <Home2 />
 
         {/* ------------------Our Service--------------------- */}
-        <div className="home-service bg-gradient-to-r from-color5 to-color9 ">
+        <div className="home-service bg-inherit ">
           <div className="max-w-[100] mx-auto">
             <div className="text-center text-black font-bold uppercase py-8">
               <h2 className="f-26">Our Services</h2>
@@ -212,93 +217,131 @@ const Home = () => {
 
         {/* ------------------Our Blog--------------------- */}
 
-        <div className="container-fluid py-1 bg-gradient-to-b from-color3 to-color6 ">
+        <div className="our-blog container-fluid py-1 ">
           <div>
-            <h1 className="blog-h text-center text-black font-bold uppercase py-8"> Our Blog</h1>
+            <h1 className="blog-h text-center text-black font-bold uppercase py-8">
+              Our Blog
+            </h1>
           </div>
           <div className="all-Cards   w-[80%] mx-[10%] my-10 ">
             <Slider {...settings} className="slide ">
-              <Card className="s-card-1 border-1 shadow-xl my-5">
-                <Card.Img variant="top" src="./Logos/blog.png" alt="no-img" />
-                <Card.Body className="card1  bg-sky-100">
-                  <Card.Title>
-                    <h4 className="h-c text-gray-600 md:text-3lg">
-                      What is a Stock Split, how does it work, and its
-                      advantages
-                    </h4>
-                  </Card.Title>
-                  <Card.Text className="t border-t-2 border-gray-700 ">
-                    <p className="pr my-3">
-                      Discover the ins and outs of stock splits, including how
-                      they work and their potential advantages. Learn how this
-                      corporate action can impact investors and stock price
-                    </p>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+              {/* CARD--1 */}
 
-              <Card className="s-card-2 border-1 shadow-xl my-5">
-                <Card.Img variant="top" src="./Logos/blog-2.png" alt="no-img" />
-                <Card.Body className="card1  bg-sky-100">
-                  <Card.Title>
-                    <h4 className="h-c text-gray-600 md:text-3lg">
-                      What is a Stock Split, how does it work, and its
-                      advantages
-                    </h4>
-                  </Card.Title>
-                  <Card.Text className="t border-t-2 border-gray-700 ">
-                    <p className="pr my-3">
-                      Discover the ins and outs of stock splits, including how
-                      they work and their potential advantages. Learn how this
-                      corporate action can impact investors and stock price
-                    </p>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+              <div class="card">
+                <div class="card-image">
+                  <img src=" ./Logos/nblog.png" alt="no" className="w-full " />
+                </div>
+                <div class="category">
+                  <a href="//">Best Bond Strategies to Manage your Portfolio</a>{" "}
+                </div>
+                <div class="heading">
+                  Confused about bonds? This guide simplifies Indian bond
+                  strategies for beginners. Discover buy-and-hold strategy,
+                  laddering strategy, active management <br />
+                  <a className=" " href="//">
+                    Read More....
+                  </a>
+                  <div class="author">
+                    By <span class="name">Abi</span> 4 days ago
+                  </div>
+                </div>
+              </div>
+              {/* CARD--2 */}
 
-              <Card className="s-card-2 border-1 shadow-xl my-5">
-                <Card.Img
-                  variant="top"
-                  src="./Logos/Be a pro trader with this 7 key concepts.jpeg"
-                />
-                <Card.Body className="card1 bg-sky-100 ">
-                  <Card.Title>
-                    <h4 className="h-c text-gray-600 md:text-3lg">
-                      What is a Stock Split, how does it work, and its
-                      advantages
-                    </h4>
-                  </Card.Title>
-                  <Card.Text className="t border-t-2 border-gray-700 ">
-                    <p className="pr my-3">
-                      Discover the ins and outs of stock splits, including how
-                      they work and their potential advantages. Learn how this
-                      corporate action can impact investors and stock price
-                    </p>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+              <div class="card">
+                <div class="card-image">
+                  <img src=" ./Logos/nblog-4.png" alt="no2" className="w-full " />
+                </div>
+                <div class="category">
+                  <a href="//">The Future of Indian Renewable Energy Stocks</a>{" "}
+                </div>
+                <div class="heading">
+                  Thinking of investing sustainably? Dive into the future of
+                  India's renewable energy stocks, understand what it is, top
+                  performers, and how to get started! <br />
+                  <a className=" " href="//">
+                    Read More....
+                  </a>
+                  <div class="author">
+                    By <span class="name">Abi</span> 4 days ago
+                  </div>
+                </div>
+              </div>
+              {/* CARD--3 */}
 
-              <Card className="s-card-4 border-1 shadow-xl my-5">
-                <Card.Img
-                  variant="top"
-                  src="./Logos/Be a pro trader with this 7 key concepts.jpeg"
-                />
-                <Card.Body className="card1  bg-sky-100">
-                  <Card.Title>
-                    <h4 className="h-c text-gray-600 md:text-3lg">
-                      What is a Stock Split, how does it work, and its
-                      advantages
-                    </h4>
-                  </Card.Title>
-                  <Card.Text className="t border-t-2 border-gray-700 ">
-                    <p className="pr my-3">
-                      Discover the ins and outs of stock splits, including how
-                      they work and their potential advantages. Learn how this
-                      corporate action can impact investors and stock price
-                    </p>
-                  </Card.Text>
-                </Card.Body>
-              </Card>
+              <div class="card">
+                <div class="card-image">
+                  <img
+                    src=" ./Logos/nblog-3.png"
+                    alt="no3"
+                    className="w-full "
+                  />
+                </div>
+                <div class="category">
+                  <a href="//">Understanding the Sensex and Nifty indexes</a>{" "}
+                </div>
+                <div class="heading">
+                  Let’s understand Sensex & Nifty in Simple Terms! Learn what
+                  they are, how they work, and how to track them for smarter
+                  investment decisions.
+                  <br />{" "}
+                  <a className=" " href="//">
+                    Read More....
+                  </a>
+                  <div class="author">
+                    By <span class="name">Abi</span> 4 days ago
+                  </div>
+                </div>
+              </div>
+
+              {/* CARD--4 */}
+
+              <div class="card">
+                <div class="card-image">
+                  <img src=" ./Logos/nblog-2.png" alt="no4" className="w-full " />
+                </div>
+                <div class="category">
+                  <a href="//">
+                    Indian Stock Market vs. Global Counterparts: 
+                  </a>{" "}
+                </div>
+                <div class="heading">
+                  Curious about the Indian stock market compared globally? This
+                  guide dives in, comparing size, returns, sectors, and
+                  regulations. 
+                  <br />{" "}
+                  <a className=" " href="//">
+                    Read More....
+                  </a>
+                  <div class="author">
+                    By <span class="name">Abi</span> 4 days ago
+                  </div>
+                </div>
+              </div>
+
+              {/* CARD--5 */}
+              <div class="card">
+                <div class="card-image">
+                  <img src=" ./Logos/nblog-5.png" alt="no5" className="w-full " />
+                </div>
+                <div class="category">
+                  <a href="//">
+                    How do Changes in Consumer Behaviour impact
+                  </a>{" "}
+                </div>
+                <div class="heading">
+                  How your shopping habits can move the stock market! Explore
+                  how consumer trends impact companies, stock prices, and
+                  investment
+                  <br />{" "}
+                  <a className=" " href="//">
+                    Read More....
+                  </a>
+                  <div class="author">
+                    By <span class="name">Abi</span> 4 days ago
+                  </div>
+                </div>
+              </div>
             </Slider>
           </div>
         </div>
