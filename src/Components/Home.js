@@ -90,34 +90,34 @@ const Home = () => {
             </h1>
             <div className=" md:pt-[2vw] ">
               <label
-                class="home-search hidden  bg-color2 min-w-sm max-w-[40vw] md:flex flwx-wrap items-start justify-start  rounded-2xl gap-2"
+                className="home-search hidden  bg-color2 min-w-sm max-w-[40vw] md:flex flwx-wrap items-start justify-start  rounded-2xl gap-2"
                 for="search-bar"
               >
                 <input
                   id="search-bar"
                   placeholder="Get A Call"
-                  class="px-6 py-2 w-full rounded-md flex-1 outline-none bg-inherit"
+                  className="px-6 py-2 w-full rounded-md flex-1 outline-none bg-inherit"
                 />
-                <button class="w-full md:w-auto px-6 py-3 bg-color9 border-black text-color3 fill-white active:scale-95 duration-100 border will-change-transform overflow-hidden relative rounded-xl transition-all disabled:opacity-70">
-                  <div class="relative">
+                <button className="w-full md:w-auto px-6 py-3 bg-color9 border-black text-color3 fill-white active:scale-95 duration-100 border will-change-transform overflow-hidden relative rounded-xl transition-all disabled:opacity-70">
+                  <div className="relative">
                     {/* <!-- Loading animation change opacity to display --> */}
-                    <div class="flex items-center justify-center h-3 w-3 absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 transition-all">
+                    <div className="flex items-center justify-center h-3 w-3 absolute inset-1/2 -translate-x-1/2 -translate-y-1/2 transition-all">
                       <svg
-                        class="opacity-0 animate-spin w-full h-full"
+                        className="opacity-0 animate-spin w-full h-full"
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
                         viewBox="0 0 24 24"
                       >
                         <path
-                          class="opacity-75"
+                          className="opacity-75"
                           fill="currentColor"
                           d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                         ></path>
                       </svg>
                     </div>
 
-                    <div class="flex items-center transition-all opacity-1 valid:">
-                      <span class="text-sm font-semibold whitespace-nowrap truncate mx-auto uppercase">
+                    <div className="flex items-center transition-all opacity-1 valid:">
+                      <span className="text-sm font-semibold whitespace-nowrap truncate mx-auto uppercase">
                         get into touch
                       </span>
                     </div>
@@ -227,118 +227,118 @@ const Home = () => {
             <Slider {...settings} className="slide ">
               {/* CARD--1 */}
 
-              <div class="card">
-                <div class="card-image">
+              <div className="card">
+                <div className="card-image">
                   <img src=" ./Logos/nblog.png" alt="no" className="w-full " />
                 </div>
-                <div class="category">
+                <div className="category">
                   <a href="//">Best Bond Strategies to Manage your Portfolio</a>{" "}
                 </div>
-                <div class="heading">
-                  Confused about bonds? This guide simplifies Indian bond
+                <div className="heading ">
+                  <p>  Confused about bonds? This guide simplifies Indian bond
                   strategies for beginners. Discover buy-and-hold strategy,
-                  laddering strategy, active management <br />
+                  laddering strategy, active management</p>
+                
                   <a className=" " href="//">
                     Read More....
                   </a>
-                  <div class="author">
-                    By <span class="name">Abi</span> 4 days ago
+                  <div className="author">
+                    By <span className="name">Abi</span> 4 days ago
                   </div>
                 </div>
               </div>
               {/* CARD--2 */}
 
-              <div class="card">
-                <div class="card-image">
+              <div className="card">
+                <div className="card-image">
                   <img src=" ./Logos/nblog-4.png" alt="no2" className="w-full " />
                 </div>
-                <div class="category">
+                <div className="category">
                   <a href="//">The Future of Indian Renewable Energy Stocks</a>{" "}
                 </div>
-                <div class="heading">
-                  Thinking of investing sustainably? Dive into the future of
+                <div className="heading">
+                 <p> Thinking of investing sustainably? Dive into the future of
                   India's renewable energy stocks, understand what it is, top
-                  performers, and how to get started! <br />
+                  performers, and how to get started!</p>
                   <a className=" " href="//">
                     Read More....
                   </a>
-                  <div class="author">
-                    By <span class="name">Abi</span> 4 days ago
+                  <div className="author">
+                    By <span className="name">Abi</span> 4 days ago
                   </div>
                 </div>
               </div>
               {/* CARD--3 */}
 
-              <div class="card">
-                <div class="card-image">
+              <div className="card">
+                <div className="card-image">
                   <img
                     src=" ./Logos/nblog-3.png"
                     alt="no3"
                     className="w-full "
                   />
                 </div>
-                <div class="category">
+                <div className="category">
                   <a href="//">Understanding the Sensex and Nifty indexes</a>{" "}
                 </div>
-                <div class="heading">
-                  Let’s understand Sensex & Nifty in Simple Terms! Learn what
+                <div className="heading">
+                 <p> Let’s understand Sensex & Nifty in Simple Terms! Learn what
                   they are, how they work, and how to track them for smarter
-                  investment decisions.
-                  <br />{" "}
+                  investment decisions.</p>
+                
                   <a className=" " href="//">
                     Read More....
                   </a>
-                  <div class="author">
-                    By <span class="name">Abi</span> 4 days ago
+                  <div className="author">
+                    By <span className="name">Abi</span> 4 days ago
                   </div>
                 </div>
               </div>
 
               {/* CARD--4 */}
 
-              <div class="card">
-                <div class="card-image">
+              <div className="card">
+                <div className="card-image">
                   <img src=" ./Logos/nblog-2.png" alt="no4" className="w-full " />
                 </div>
-                <div class="category">
-                  <a href="//">
+                <div className="category ">
+                  <a href="//" className="">
                     Indian Stock Market vs. Global Counterparts: 
                   </a>{" "}
                 </div>
-                <div class="heading">
-                  Curious about the Indian stock market compared globally? This
+                <div className="heading">
+               <p>   Curious about the Indian stock market compared globally? This
                   guide dives in, comparing size, returns, sectors, and
-                  regulations. 
-                  <br />{" "}
-                  <a className=" " href="//">
+                  regulations. </p>
+                   <a className=" " href="//">
                     Read More....
                   </a>
-                  <div class="author">
-                    By <span class="name">Abi</span> 4 days ago
+                  <div className="author">
+                    By <span className="name">Abi</span> 4 days ago
                   </div>
                 </div>
               </div>
 
               {/* CARD--5 */}
-              <div class="card">
-                <div class="card-image">
+              <div className="card">
+                <div className="card-image">
                   <img src=" ./Logos/nblog-5.png" alt="no5" className="w-full " />
                 </div>
-                <div class="category">
+                <div className="category">
                   <a href="//">
                     How do Changes in Consumer Behaviour impact
-                  </a>{" "}
+                  </a>
                 </div>
-                <div class="heading">
-                  How your shopping habits can move the stock market! Explore
+                <div className="heading">
+              <p> How your shopping habits can move the stock market! Explore
                   how consumer trends impact companies, stock prices, and
-                  investment
-                  <br />{" "}
+                  investment</p>
+                  
                   <a className=" " href="//">
                     Read More....
                   </a>
-                  <div class="author">
-                    By <span class="name">Abi</span> 4 days ago
+                  <div className="author">
+                    By <span className="name">Abi</span> 4 days ago
                   </div>
                 </div>
               </div>

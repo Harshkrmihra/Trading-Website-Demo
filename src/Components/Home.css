@@ -40,21 +40,16 @@ button.slick-next:before {
 
 .card {
   width: 20vw;
-  height: 30vw;
-
+  height: fit-content;
   padding: 0.8em;
-  border-radius: 6px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
-    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
-    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
-    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
-    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-radius: 50px;
+ 
 }
 
-.card-image {
-  width: 100%;
-  height: fit-content;
-  border-radius: 6px 6px 0 0;
+.card-image img {
+height:  300px !important ;
+object-fit: cover;
+
 }
 
 .card-image:hover {
@@ -63,10 +58,10 @@ button.slick-next:before {
 
 .category {
   text-transform: uppercase;
-  font-size: 1.5vw;
+  font-size: 20px;
   font-weight: 600;
+  padding-top: 20px;
   color: rgb(63, 121, 230);
-  padding: 10px 7px 0;
   border-bottom: 2px solid rgba(0, 0, 0, 0.453);
 }
 
@@ -75,11 +70,15 @@ button.slick-next:before {
   text-decoration: underline;
 }
 
-.heading {
+.heading p {
   font-weight: 600;
   color: rgb(88, 87, 87);
-  padding: 7px;
-  font-size: 01.2vw;
+  font-size: 20px;
+  padding-top: 20px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4; /* Number of lines to show */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* .heading:hover {

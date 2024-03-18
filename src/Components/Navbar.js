@@ -41,22 +41,7 @@ const Navbar = () => {
                   Products
                 </a>
               </li>
-              <li>
-                <a
-                  className="links text-color11 text-[23px] font-semibold hover:font-semibold hover:no-underline   lg:hover:no-underline hover:text-color2 "
-                  href="/price"
-                >
-                  Pricing
-                </a>
-              </li>
-              <li>
-                <a
-                  className="links text-color11 text-[23px] font-semibold hover:font-semibold hover:no-underline   lg:hover:no-underline hover:text-color2 "
-                  href="/about"
-                >
-                  About Us
-                </a>
-              </li>
+
               <li>
                 <a
                   className="links text-color11 text-[23px] font-semibold hover:font-semibold hover:no-underline   lg:hover:no-underline hover:text-color2 "
@@ -65,14 +50,27 @@ const Navbar = () => {
                   Funds
                 </a>
               </li>
+
+              
               <li>
                 <a
                   className="links text-color11 text-[23px] font-semibold hover:font-semibold hover:no-underline   lg:hover:no-underline hover:text-color2 "
-                  href="/courese"
+                  href="/about"
                 >
-                  Courses
+                  About Us
                 </a>
               </li>
+
+              <li>
+                <a
+                  className="links text-color11 text-[23px] font-semibold hover:font-semibold hover:no-underline   lg:hover:no-underline hover:text-color2 "
+                  href="/price"
+                >
+                  Pricing
+                </a>
+              </li>
+             
+             
             </ul>
           </div>
           <button
