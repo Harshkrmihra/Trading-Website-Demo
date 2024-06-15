@@ -4,9 +4,9 @@ import React from 'react'
 const Header = () => {
   return (
    <>
-     <div className="topNavbar hidden md:h-14 md:place-items-center md:flex md:justify-end bg-color2 opacity-95 Md:max-h-24 md:space-x-4 md:p-7 ">
+     <div className="topNavbar hidden  md:h-14 md:items-center md:flex md:justify-end bg-color2 opacity-95 Md:max-h-24 md:space-x-4 md:p-7 ">
         <div className="top flex text-black  ">
-        <ul className="flex gap-10 text-cente" >
+        <ul className="flex gap-10 text-center   " >
               <li>
                 <a
                   className="links  text-black  hover:te hover:font-semibold   "

@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
-import"./Funds.css";
+import "./Funds.css";
 
 const Funds = () => {
   const [tabSelected, setTabSelected] = useState({
     currentTab: 1,
-    noTabs: 3,
+    noTabs: 2,
   });
 
   const wrapperRef = useRef(null);
@@ -60,22 +60,22 @@ const Funds = () => {
     <>
       <div className="main-fund ">
         <div className=" container my-5 ">
-          <h1 className=" text-center">FUND TRANSFER</h1>
+          <h1 className=" text-center uppercase">FUND TRANSFER</h1>
           <hr className="  bg-black font-extrabold" />
         </div>
 
         <section
-          className="containe flex-wrap mx-[10vw] "
+          className="container flex flex-wrap "
           aria-multiselectable="false"
         >
           <ul
-            className="flex items-center border-b border-slate-200"
+            className=" container overflow-hidden  flex items-center   border-b border-slate-200"
             role="tablist"
             ref={wrapperRef}
           >
             <li className="flex-1" role="presentation">
               <button
-                className={`-mb-px inline-flex h-10 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-5 text-sm font-medium tracking-wide transition duration-300 hover:bg-emerald-50 hover:stroke-emerald-600 focus:bg-emerald-50 focus-visible:outline-none disabled:cursor-not-allowed ${
+                className={` h-10  items-center justify-center w-[40vw] whitespace-nowrap rounded-t border-b-2  text-md font-medium tracking-wide transition duration-300 hover:bg-emerald-50 hover:stroke-emerald-600 focus:bg-emerald-50 focus-visible:outline-none disabled:cursor-not-allowed ${
                   tabSelected.currentTab === 1
                     ? "border-emerald-500 stroke-emerald-500 text-emerald-500 hover:border-emerald-600  hover:text-emerald-600 focus:border-emerald-700 focus:stroke-emerald-700 focus:text-emerald-700 disabled:border-slate-500"
                     : "justify-self-center border-transparent stroke-slate-700 text-slate-700 hover:border-emerald-500 hover:text-emerald-500 focus:border-emerald-600 focus:stroke-emerald-600 focus:text-emerald-600 disabled:text-slate-500"
@@ -93,12 +93,12 @@ const Funds = () => {
                   setTabSelected({ ...tabSelected, currentTab: 1 })
                 }
               >
-                <span className="font-bold text-[3vh]"> Deposit Funds</span>
+                <span className="font-bold text-[2vh] lg:text-[25px]"> Deposit Funds</span>
               </button>
             </li>
             <li className="flex-1" role="presentation ">
               <button
-                className={`-mb-px inline-flex h-10 w-full items-center justify-center gap-2 whitespace-nowrap rounded-t border-b-2 px-5 text-sm font-medium tracking-wide transition duration-300 hover:bg-emerald-50 hover:stroke-emerald-600 focus:bg-emerald-50 focus-visible:outline-none disabled:cursor-not-allowed ${
+                className={`h-10  items-center justify-center w-[40vw] whitespace-nowrap rounded-t border-b-2  text-md font-medium tracking-wide transition duration-300 hover:bg-emerald-50 hover:stroke-emerald-600 focus:bg-emerald-50 focus-visible:outline-none disabled:cursor-not-allowed ${
                   tabSelected.currentTab === 2
                     ? "border-emerald-500 stroke-emerald-500 text-emerald-500 hover:border-emerald-600  hover:text-emerald-600 focus:border-emerald-700 focus:stroke-emerald-700 focus:text-emerald-700 disabled:border-slate-500"
                     : "justify-self-center border-transparent stroke-slate-700 text-slate-700 hover:border-emerald-500 hover:text-emerald-500 focus:border-emerald-600 focus:stroke-emerald-600 focus:text-emerald-600 disabled:text-slate-500"
@@ -116,11 +116,15 @@ const Funds = () => {
                   setTabSelected({ ...tabSelected, currentTab: 2 })
                 }
               >
-                <span className="font-bold text-[3vh]">Withdraw funds</span>
+                <span className="font-bold text-[2vh] lg:text-[25px] ">Withdraw funds</span>
               </button>
             </li>
           </ul>
-          <div className="">
+
+          <div className=" ">
+
+            {/* --------------------------------Deposite-section-------------------------------- */}
+
             <div
               className={`px-5 py-4 ${
                 tabSelected.currentTab === 1 ? "" : "hidden"
@@ -138,7 +142,7 @@ const Funds = () => {
                 </p>
               </div>
 
-                   {/* ---------------------------------Table-section-------------------------------- */}
+              {/* ---------------------------------Table-section-------------------------------- */}
               <table class="w-full table-fixed">
                 <thead>
                   <tr className="bg-black/40 border-3   h-[5vw] border-solid border-black/60 ">
@@ -251,80 +255,107 @@ const Funds = () => {
                 </tbody>
               </table>
 
+              {/* ----------------------------imp-Notes-section---------------------------- */}
 
-                    {/* ----------------------------imp-Notes-section---------------------------- */}
-           
-              <div className="md:border-2 md:border-gray-500 my-5 lg:my-5 lg:p-6">
-                <h1 className="text-[4vh]" >Important Points To Note:-</h1>
+              <div className="md:border-2 md:border-gray-500 my-5 md:my-5  lg:p-6 md:p-6 p-6">
+                <h1 className="text-[4vh]">Important Points To Note:-</h1>
                 <ul className="my-5 contents">
                   <li className="my-3">
-                  1.  As per required guidelines, you can only transfer funds from
-                    your <strong> registered bank account</strong> with
+                    1. As per required guidelines, you can only transfer funds
+                    from your <strong> registered bank account</strong> with
                     TradingBells.
                   </li>
-                 <li className="my-3">
-                2. We are one of the few brokers to maintain{" "}
-                  <strong>
-                    a single bank account for both Equity and Commodity
-                  </strong>
-                  , which means you do not need to transfer between your Equity
-                  and Commodity Accounts separatly. Bank Account details are
-                  mentioned below
-                 </li>
                   <li className="my-3">
-                   3. As per the regulations, we <strong> cannot accept </strong>{" "}
-                    Cash transfers or transfers through Debit or Credit Cards.
+                    2. We are one of the few brokers to maintain{" "}
+                    <strong>
+                      a single bank account for both Equity and Commodity
+                    </strong>
+                    , which means you do not need to transfer between your
+                    Equity and Commodity Accounts separatly. Bank Account
+                    details are mentioned below
                   </li>
                   <li className="my-3">
-                   4. If you do not see the credit in your trading account
+                    3. As per the regulations, we{" "}
+                    <strong> cannot accept </strong> Cash transfers or transfers
+                    through Debit or Credit Cards.
+                  </li>
+                  <li className="my-3">
+                    4. If you do not see the credit in your trading account
                     immediately after transferring funds from the instant
                     payment gateway or IMPS option, or after the stipulated time
-                    for NEFT / RTGS transfers, you need to send us a <strong> support@tradingbells.com </strong>
+                    for NEFT / RTGS transfers, you need to send us a{" "}
+                    <strong> support@tradingbells.com </strong>
                     of the debit from your bank account to
-                   <a href="/"> support@tradingbells.com </a>  so we can coordinate with your bank
-                    and the payment gateway. If the payment fails for any
-                    reason, you will need to wait at least 24 hours for the
-                    funds to reflect in your trading account or get refunded to
-                    your bank account.
+                    <a href="/"> support@tradingbells.com </a> so we can
+                    coordinate with your bank and the payment gateway. If the
+                    payment fails for any reason, you will need to wait at least
+                    24 hours for the funds to reflect in your trading account or
+                    get refunded to your bank account.
                   </li>
                 </ul>
               </div>
 
- 
-                   {/* ---------------------------------Bank-Details-section---------------------------------- */}
-              
-              
-              <div className=" bank-d-fund flex-wrap">
-                <h1 className="text-[2vw] py-2">Designated Bank Details
-</h1>
-<div className=" bank-payment flex flex-col  md:flex-col lg:flex-row  gap-5  lg:gap-[10vw]">
+              {/* ---------------------------------Bank-Details-section---------------------------------- */}
 
-   {/* -----------YES-BANK------------ */}
-  <div >
-<h4 className="font-semibold">YES BANK</h4>
-<h6><span className="font-bold"> Bank: </span> YES BANK </h6>
-<h6><span className="font-bold"> Name: </span> IIFL Securities Ltd. </h6>
-<h6><span className="font-bold"> A/c No,: </span> IILEQ1 followed by client code.
-For example if your client code is ABCD1234, then A/c No. will be IILEQ1ABCD1234 </h6>
-<h6><span className="font-bold"> IFSC Code: </span> YESB0CMSNO </h6>
-<h6><span className="font-bold"> Bank Branch: </span>  Elphistone, Mumbai </h6>
-  </div>
-        {/* -----------CITIBANK------------ */}
-  <div>
-<h4 className="font-semibold">CITIBANK</h4>
-<h6><span className="font-bold"> Bank: </span> CITIBANK </h6>
-<h6><span className="font-bold"> Name: </span> IIFL Securities Ltd. </h6>
-<h6><span className="font-bold"> A/c No,: </span> 523500 followed by client code.
-For example if your client code is ABCD1234, then A/c No. will be 523500ABCD1234 </h6>
-<h6><span className="font-bold"> IFSC Code: </span> CITI0100000 </h6>
-<h6><span className="font-bold"> Bank Branch: </span> MUMBAI </h6>
-  </div>
-</div>
+              <div className=" bank-d-fund flex-wrap  bg-inherit">
+                <h1 className="text-[2vw] py-2">Designated Bank Details</h1>
+                <div className=" bank-payment flex flex-col  md:flex-col lg:flex-row  gap-5  lg:gap-[10vw]">
+                  {/* -----------YES-BANK------------ */}
+                  <div>
+                    <h4 className="font-semibold">YES BANK</h4>
+                    <h6>
+                      <span className="font-bold"> Bank: </span> YES BANK{" "}
+                    </h6>
+                    <h6>
+                      <span className="font-bold"> Name: </span> IIFL Securities
+                      Ltd.{" "}
+                    </h6>
+                    <h6>
+                      <span className="font-bold"> A/c No,: </span> IILEQ1
+                      followed by client code. For example if your client code
+                      is ABCD1234, then A/c No. will be IILEQ1ABCD1234{" "}
+                    </h6>
+                    <h6>
+                      <span className="font-bold"> IFSC Code: </span> YESB0CMSNO{" "}
+                    </h6>
+                    <h6>
+                      <span className="font-bold"> Bank Branch: </span>{" "}
+                      Elphistone, Mumbai{" "}
+                    </h6>
+                  </div>
+                  {/* -----------CITIBANK------------ */}
+                  <div>
+                    <h4 className="font-semibold">CITIBANK</h4>
+                    <h6>
+                      <span className="font-bold"> Bank: </span> CITIBANK{" "}
+                    </h6>
+                    <h6>
+                      <span className="font-bold"> Name: </span> IIFL Securities
+                      Ltd.{" "}
+                    </h6>
+                    <h6>
+                      <span className="font-bold"> A/c No,: </span> 523500
+                      followed by client code. For example if your client code
+                      is ABCD1234, then A/c No. will be 523500ABCD1234{" "}
+                    </h6>
+                    <h6>
+                      <span className="font-bold"> IFSC Code: </span>{" "}
+                      CITI0100000{" "}
+                    </h6>
+                    <h6>
+                      <span className="font-bold"> Bank Branch: </span> MUMBAI{" "}
+                    </h6>
+                  </div>
+                </div>
               </div>
-              <h6 className="text-center my-5">If you face any problems, please feel free to reach out to our support team  <a href="/">here.</a> 
-
-</h6>
+              <h6 className="text-center my-5">
+                If you face any problems, please feel free to reach out to our
+                support team <a href="/">here.</a>
+              </h6>
             </div>
+
+            {/* --------------------------------withdraw-section-------------------------------- */}
+
             <div
               className={`px-5 py-4 ${
                 tabSelected.currentTab === 2 ? "" : "hidden"
@@ -335,36 +366,43 @@ For example if your client code is ABCD1234, then A/c No. will be 523500ABCD1234
               aria-labelledby="tab-label-2b"
               tabindex="-1"
             >
-             
-             <div className=" py-5">
-                <h1 className="text-[4vh]" >Important Points To Note:-</h1>
+              <div className=" py-5">
+                <h1 className="text-[4vh]">Important Points To Note:-</h1>
                 <ul className="my-5 contents">
                   <li className="my-3">
-                  1. You can place a fund withdrawal request by entering your details here or by sending an email to  <a href="mailto:chaurasiyaneha1124@gmail.com"> support@tradingbells.com </a> stating your Client ID, amount to be withdrawn and the segment (Equity / Commodity).
-
-                  </li>
-                 <li className="my-3">
-                2. Funds transferred through the <strong> payment gateway takes 24 hours to settle</strong>, therefore same day payout request cannot be processed for such cases.
-
-              
-                 </li>
-                  <li className="my-3">
-                  3. In case of Intraday trading, funds are available for withdrawal only after T+1 days. In case of selling your holdings, funds are settled on T+2 days, and cannot be withdrawn before that.
-
+                    1. You can place a fund withdrawal request by entering your
+                    details here or by sending an email to{" "}
+                    <a href="mailto:chaurasiyaneha1124@gmail.com">
+                      {" "}
+                      support@tradingbells.com{" "}
+                    </a>{" "}
+                    stating your Client ID, amount to be withdrawn and the
+                    segment (Equity / Commodity).
                   </li>
                   <li className="my-3">
-                  4. All withdrawals are <strong> processed at 9 AM on Mondays to Fridays</strong> and any withdrawal request placed after this time will be processed on the next working day.
-
+                    2. Funds transferred through the{" "}
+                    <strong> payment gateway takes 24 hours to settle</strong>,
+                    therefore same day payout request cannot be processed for
+                    such cases.
                   </li>
                   <li className="my-3">
-                 5. Funds may take up to 24 hours to be credited to your bank account once they are processed by us.
-
-
+                    3. In case of Intraday trading, funds are available for
+                    withdrawal only after T+1 days. In case of selling your
+                    holdings, funds are settled on T+2 days, and cannot be
+                    withdrawn before that.
+                  </li>
+                  <li className="my-3">
+                    4. All withdrawals are{" "}
+                    <strong> processed at 9 AM on Mondays to Fridays</strong>{" "}
+                    and any withdrawal request placed after this time will be
+                    processed on the next working day.
+                  </li>
+                  <li className="my-3">
+                    5. Funds may take up to 24 hours to be credited to your bank
+                    account once they are processed by us.
                   </li>
                 </ul>
               </div>
-
-
             </div>
           </div>
         </section>

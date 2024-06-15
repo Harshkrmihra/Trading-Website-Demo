@@ -12,6 +12,8 @@ import Course from './Components/Course';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Footer from './Components/Footer';
 import Blog from './Components/Blog';
+import HelpDesk from './Components/HelpDesk';
+import Contect from './Components/Contect';
 function App() {
   return (
     <>
@@ -23,8 +25,10 @@ function App() {
         <Route path="/product" element={<Product />} />
         <Route path="/about" element={<About />} />
         <Route path="/price" element={<Pricing />} />
-        <Route path="/course" element={<Course />} />
+        <Route path='contact' element={<Contect />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/help" element={<HelpDesk />} />
+
       </Routes>
       {/* <!-- Footer component goes here --> */}
       <Footer />
